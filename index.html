@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>±Theory</title>
+    <title>±Theory | The Ultimate Generative Model</title>
     <style>
         * {
             margin: 0;
@@ -12,146 +12,200 @@
         }
 
         body {
-            font-family: 'Palatino', 'Baskerville', 'Garamond', serif;
-            background: linear-gradient(to bottom, #e8dcc8 0%, #f5f0e8 100%);
-            color: #2a2520;
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 2rem;
-            line-height: 1.7;
+            line-height: 1.6;
             position: relative;
+            overflow-x: hidden;
         }
 
         body::before {
             content: '';
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                radial-gradient(circle at 20% 50%, rgba(139, 115, 85, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(139, 115, 85, 0.05) 0%, transparent 50%);
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 100, 200, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(100, 0, 200, 0.03) 0%, transparent 50%);
+            animation: drift 60s ease-in-out infinite;
             pointer-events: none;
             z-index: 0;
         }
 
-        .container {
-            max-width: 700px;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-            background: linear-gradient(135deg, #f9f5ee 0%, #f5f0e8 100%);
-            padding: 4rem 3rem;
-            border: 1px solid rgba(139, 115, 85, 0.2);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            position: relative;
+        @keyframes drift {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(-5%, -5%); }
         }
 
-        .container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(139, 115, 85, 0.02) 2px, rgba(139, 115, 85, 0.02) 4px),
-                repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(139, 115, 85, 0.02) 2px, rgba(139, 115, 85, 0.02) 4px);
-            opacity: 0.4;
-            pointer-events: none;
+        .container {
+            max-width: 900px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            background: rgba(15, 15, 15, 0.8);
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
-            font-size: 4.5rem;
-            font-weight: 300;
+            font-size: 4rem;
+            font-weight: 200;
+            letter-spacing: 0.3em;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            text-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
             letter-spacing: 0.15em;
-            margin-bottom: 4rem;
-            color: #3d3530;
-            font-family: 'Palatino', 'Baskerville', serif;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+        }
+
+        .tabs::-webkit-scrollbar {
+            height: 2px;
+        }
+
+        .tabs::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .tabs::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .tab {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #666;
+            padding: 1rem 1.5rem;
+            font-size: 0.8rem;
+            font-family: inherit;
+            letter-spacing: 0.15em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: 400;
             position: relative;
-            z-index: 2;
+        }
+
+        .tab:hover {
+            color: #aaa;
+            border-bottom-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .tab.active {
+            color: #ffffff;
+            border-bottom-color: #ffffff;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tab-content.active {
+            display: block;
         }
 
         .description {
-            font-size: 1rem;
-            color: #4a4035;
-            margin-bottom: 3rem;
-            line-height: 1.9;
-            text-align: justify;
-            padding: 0 1rem;
+            font-size: 0.95rem;
+            color: #aaa;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            text-align: left;
             letter-spacing: 0.02em;
             font-weight: 300;
-            position: relative;
-            z-index: 2;
         }
 
         .description p {
-            margin-bottom: 1.5rem;
-            text-indent: 2em;
+            margin-bottom: 1.2rem;
         }
 
-        .description p:first-child {
-            text-indent: 0;
-        }
-
-        .access-section {
-            margin-top: 3.5rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .access-title {
-            font-size: 0.9rem;
-            letter-spacing: 0.15em;
-            color: #3d3530;
+        .section-title {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: #666;
             text-transform: uppercase;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             font-weight: 400;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 1.5rem;
         }
 
         .button-container {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.8rem;
             align-items: center;
+            margin-top: 2rem;
         }
 
         button, a.button {
-            background: rgba(255, 255, 255, 0.6);
-            border: 1px solid #8b7355;
-            color: #3d3530;
-            padding: 0.9rem 2.8rem;
-            font-size: 0.85rem;
-            font-family: 'Palatino', 'Baskerville', serif;
-            letter-spacing: 0.12em;
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 1rem 2rem;
+            font-size: 0.75rem;
+            font-family: inherit;
+            letter-spacing: 0.15em;
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
-            position: relative;
-            overflow: hidden;
             font-weight: 400;
-            z-index: 2;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
             text-decoration: none;
             display: inline-block;
-            min-width: 280px;
+            min-width: 300px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        button::before {
+        button::before, a.button::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: rgba(139, 115, 85, 0.1);
-            transition: left 0.3s ease;
-            z-index: -1;
+            background: rgba(255, 255, 255, 0.05);
+            transition: left 0.4s ease;
         }
 
         button:hover::before, a.button:hover::before {
@@ -159,14 +213,89 @@
         }
 
         button:hover, a.button:hover {
-            background: rgba(255, 255, 255, 0.9);
-            border-color: #6d5943;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-            color: #2a2520;
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
         }
 
         button:active, a.button:active {
             transform: scale(0.98);
+        }
+
+        .book-cover {
+            max-width: 280px;
+            width: 100%;
+            margin: 2rem auto;
+            display: block;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        .roadmap-list {
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .roadmap-item {
+            margin-bottom: 1.8rem;
+            padding: 1.2rem;
+            border-left: 2px solid rgba(255, 255, 255, 0.1);
+            padding-left: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .roadmap-item:hover {
+            border-left-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .roadmap-title {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .roadmap-status {
+            font-size: 0.8rem;
+            color: #666;
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+
+        .roadmap-status.completed {
+            color: #4a9eff;
+        }
+
+        .roadmap-status.completed::before {
+            content: '✓ ';
+            color: #4a9eff;
+        }
+
+        .roadmap-status.in-progress {
+            color: #ffa500;
+        }
+
+        .roadmap-status.in-progress::before {
+            content: '⟳ ';
+            color: #ffa500;
+        }
+
+        .community-links, .contact-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            color: #aaa;
+            margin: 1rem 0 2rem 0;
+            text-align: center;
+            letter-spacing: 0.02em;
         }
 
         .copied-message {
@@ -174,19 +303,19 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 1.2rem;
-            color: #3d3530;
-            background: rgba(255, 255, 255, 0.95);
+            font-size: 1rem;
+            color: #ffffff;
+            background: rgba(20, 20, 20, 0.95);
             padding: 2rem 3rem;
-            border: 1px solid #8b7355;
-            border-radius: 4px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
             opacity: 0;
             transition: opacity 0.3s ease;
-            letter-spacing: 0.2em;
-            font-weight: 400;
+            letter-spacing: 0.3em;
+            font-weight: 300;
             z-index: 1000;
             pointer-events: none;
+            backdrop-filter: blur(10px);
         }
 
         .copied-overlay {
@@ -195,7 +324,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.7);
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: 999;
@@ -212,53 +341,150 @@
 
         @media (max-width: 768px) {
             .container {
-                padding: 3rem 2rem;
+                padding: 2rem 1.5rem;
             }
 
             h1 {
-                font-size: 3rem;
-                letter-spacing: 0.12em;
+                font-size: 2.5rem;
+                letter-spacing: 0.2em;
+            }
+
+            .subtitle {
+                font-size: 0.75rem;
+            }
+
+            .tabs {
+                gap: 0;
+                overflow-x: auto;
+            }
+
+            .tab {
+                padding: 0.8rem 1rem;
+                font-size: 0.7rem;
+                white-space: nowrap;
             }
 
             .description {
-                font-size: 0.95rem;
-                text-align: left;
+                font-size: 0.9rem;
             }
 
-            .description p {
-                text-indent: 0;
+            button, a.button {
+                padding: 0.9rem 1.5rem;
+                font-size: 0.7rem;
+                min-width: 260px;
             }
 
-            button {
-                padding: 0.85rem 2.2rem;
-                font-size: 0.8rem;
-                min-width: 240px;
+            .book-cover {
+                max-width: 220px;
             }
 
-            a.button {
-                padding: 0.85rem 2.2rem;
-                font-size: 0.8rem;
-                min-width: 240px;
+            .roadmap-item {
+                padding: 1rem;
+                padding-left: 1rem;
+            }
+
+            .roadmap-title {
+                font-size: 0.85rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>±Theory</h1>
+        <h1>±THEORY</h1>
+        <div class="subtitle">The Ultimate Generative Model</div>
         
-        <div class="description">
-            <p>You're here because you likely have a copy of ± Theory — or because someone who does shared this link with you. That's perfectly fine. If you find the ideas valuable and want to support future research in this direction, you can always purchase the book later.</p>
-            
-            <p>Press the buttons below to access AI companions or explore the text using your preferred AI tools. Please keep in mind that large language models can hallucinate or misinterpret context. For original formulations and accurate references, return to the book itself before drawing conclusions.</p>
+        <div class="tabs">
+            <div class="tab active" data-tab="ai">AI Navigator</div>
+            <div class="tab" data-tab="book">Book</div>
+            <div class="tab" data-tab="community">Community</div>
+            <div class="tab" data-tab="roadmap">Roadmap</div>
+            <div class="tab" data-tab="contact">Contact</div>
         </div>
 
-        <div class="access-section">
-            <div class="access-title">AI Companion Access</div>
+        <!-- AI Navigator Tab -->
+        <div class="tab-content active" id="ai-content">
+            <div class="description">
+                <p>You're here because you likely have a copy of ±Theory book — or because someone who does shared this link with you. That's perfectly fine. If you find the ideas valuable and want to support future research in this direction, you can always purchase the book later.</p>
+                
+                <p>Press the buttons below to access AI companions or explore the text using your preferred AI tools. Please keep in mind that large language models can hallucinate or misinterpret context. For original formulations and accurate references, return to the book itself before drawing conclusions.</p>
+            </div>
+
+            <div class="section-title">Access Tools</div>
             <div class="button-container">
                 <a href="https://chatgpt.com/g/g-69616a989c888191bea66415401ab261-theory-the-ultimate-generative-model" target="_blank" class="button">Custom GPT (ChatGPT)</a>
                 <button id="copyButton">System Prompt (Other Models)</button>
-                <a href="pmtheory.pdf" class="button">Primary Source (PDF)</a>
+            </div>
+        </div>
+
+        <!-- Book Tab -->
+        <div class="tab-content" id="book-content">
+            <img src="pmbook.jpg" alt="±Theory Book Cover" class="book-cover">
+            <div class="button-container">
+                <a href="https://a.co/d/gk95e00" target="_blank" class="button">Get the Book on Amazon</a>
+            </div>
+        </div>
+
+        <!-- Community Tab -->
+        <div class="tab-content" id="community-content">
+            <div class="section-title">Join the Community</div>
+            <div class="community-links">
+                <a href="https://x.com/technobuddha67" target="_blank" class="button">X (Twitter)</a>
+                <a href="https://substack.com/@technobuddha" target="_blank" class="button">Substack</a>
+                <a href="https://discord.gg/uc4V4t8eta" target="_blank" class="button">Join ±Server on Discord</a>
+            </div>
+        </div>
+
+        <!-- Roadmap Tab -->
+        <div class="tab-content" id="roadmap-content">
+            <div class="section-title">Development Timeline</div>
+            <div class="roadmap-list">
+                <div class="roadmap-item">
+                    <div class="roadmap-title">White Paper</div>
+                    <div class="roadmap-status completed">Completed</div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-title">Book I: The Ultimate Generative Kernel</div>
+                    <div class="roadmap-status completed">Completed</div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-title">± Benchmarking Framework for LLMs</div>
+                    <div class="roadmap-status in-progress">In progress — Mid-January 2026</div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-title">Mini-LLMs trained on ± Principles + Benchmark Evaluation</div>
+                    <div class="roadmap-status in-progress">In progress — March 2026</div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-title">Systematic ± Knowledge Packing (Structured Representation & Compression)</div>
+                    <div class="roadmap-status">Start: March 2026</div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-title">Neural Network Architecture informed by ± Theory and empirical data</div>
+                    <div class="roadmap-status">Start: Q2 2026</div>
+                </div>
+                
+                <div class="roadmap-item">
+                    <div class="roadmap-title">Full ± Simulation Environment</div>
+                    <div class="roadmap-status">Long-term research objective</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Tab -->
+        <div class="tab-content" id="contact-content">
+            <div class="section-title">Get in Touch</div>
+            <div class="contact-info">
+                <p>For inquiries and discussions:</p>
+            </div>
+            <div class="contact-links button-container">
+                <a href="https://t.me/arthurnogman" target="_blank" class="button">Telegram: @arthurnogman</a>
+                <a href="https://discord.com/users/technobuddha67" target="_blank" class="button">Discord: technobuddha67</a>
             </div>
         </div>
     </div>
@@ -267,5 +493,24 @@
     <div class="copied-message" id="copiedMessage">COPIED</div>
 
     <script src="prompt.js"></script>
+    <script>
+        // Tab switching functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTab = tab.dataset.tab;
+                
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(`${targetTab}-content`).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
