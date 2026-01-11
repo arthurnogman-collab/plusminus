@@ -118,6 +118,19 @@
             text-transform: uppercase;
             font-weight: 400;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .tab-icon {
+            display: none;
+            font-size: 1.2rem;
+        }
+
+        .tab-text {
+            display: block;
         }
 
         .tab:hover {
@@ -357,12 +370,25 @@
             .tabs {
                 gap: 0;
                 overflow-x: auto;
+                justify-content: flex-start;
             }
 
             .tab {
-                padding: 0.8rem 1rem;
-                font-size: 0.7rem;
+                padding: 0.8rem 0.5rem;
+                font-size: 0.6rem;
                 white-space: nowrap;
+                min-width: 60px;
+                flex: 0 0 auto;
+            }
+
+            .tab-icon {
+                display: block;
+            }
+
+            .tab-text {
+                display: block;
+                font-size: 0.6rem;
+                letter-spacing: 0.05em;
             }
 
             .description {
@@ -396,11 +422,26 @@
         <div class="subtitle">The Ultimate Generative Model</div>
         
         <div class="tabs">
-            <div class="tab active" data-tab="ai">AI Navigator</div>
-            <div class="tab" data-tab="book">Book</div>
-            <div class="tab" data-tab="community">Community</div>
-            <div class="tab" data-tab="roadmap">Roadmap</div>
-            <div class="tab" data-tab="contact">Contact</div>
+            <div class="tab active" data-tab="ai">
+                <span class="tab-icon">🤖</span>
+                <span class="tab-text">AI Navigator</span>
+            </div>
+            <div class="tab" data-tab="book">
+                <span class="tab-icon">📖</span>
+                <span class="tab-text">Book</span>
+            </div>
+            <div class="tab" data-tab="community">
+                <span class="tab-icon">👥</span>
+                <span class="tab-text">Community</span>
+            </div>
+            <div class="tab" data-tab="roadmap">
+                <span class="tab-icon">🗺️</span>
+                <span class="tab-text">Roadmap</span>
+            </div>
+            <div class="tab" data-tab="contact">
+                <span class="tab-icon">✉️</span>
+                <span class="tab-text">Contact</span>
+            </div>
         </div>
 
         <!-- AI Navigator Tab -->
