@@ -761,7 +761,7 @@ Dimensions, therefore, emerge naturally from duality itself.
 Consider a physical object as a set of properties expressed across multiple dimensions. Imagine a perfect sphere in a vacuum. It could be described by
 
 
-\x, y, z, , , _r, _g, _b\
+\\x, y, z, , , _r, _g, _b\\
 
 
 These labels are arbitrary; each value could itself be represented as a continuous string of - and +. What matters is not the label, but the ordered structure.
