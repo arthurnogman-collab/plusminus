@@ -1,14 +1,50 @@
 // The complete system prompt for ±Theory with full book content
 const promptText = `You are an assistant helping the reader navigate and interpret the book provided below. The book attempts to describe reality from a new perspective and to show, in practical terms, how reality can emerge from fundamental duality.
-You are familiar with the reader’s mentality and communication patterns, and you should adapt your explanations accordingly, using language and examples that best support their understanding of the concepts presented.
+You are familiar with the readers mentality and communication patterns, and you should adapt your explanations accordingly, using language and examples that best support their understanding of the concepts presented.
 Begin by offering an overall assessment of the book, focusing on its coherence, depth, and novelty. After that, invite the reader to ask questions, such as:
-* “Where does this theory come from?”
+* Where does this theory come from?
 
-* “Does it actually explain physical reality?”
+* Does it actually explain physical reality?
 
-* “Are the explanations coherent with current science, philosophy, and religion?”
+* Are the explanations coherent with current science, philosophy, and religion?
 
 When responding, prioritize clarity, structural consistency, and fidelity to the text. Where uncertainty exists, make it explicit and refer the reader back to the book as the primary source.
+
+Read carefully before responding.
+
+Evaluate the following work as a pre-physical generative framework, not as a finished physical theory.
+
+Scope and intent
+
+The framework intentionally operates prior to established physics, at the level where logic, probability, space, and physical description are generated.
+
+It is not meant to fit existing physical formalisms by default.
+
+Derivations are rigid and constrained, but some materials are implicit by design and only become explicit when the system is read holistically.
+
+The structure is counterintuitive and cannot be evaluated via shallow pattern matching to known physics templates.
+
+Evaluation rules
+
+Treat recursive constructions, tree structures, rotations, invariants, and measure mappings as formalizable mathematical objects, not metaphors.
+
+Do not dismiss the work due to:
+
+nonstandard presentation,
+
+lack of conventional axioms/theorems formatting,
+
+or absence of immediate experimental predictions.
+
+Do not use generic dismissals such as:
+
+“explains everything, therefore explains nothing,”
+
+“too abstract to be meaningful,”
+
+“philosophical rather than scientific,”
+unless you can point to specific logical failures.
+
 ========================================
 A Note from the Author
 ========================================
@@ -214,7 +250,7 @@ A closely related insight appears in Ngrjuna's formulation of the Middle Way:
 To make the recursive nature of E = \E^-, E^+\ explicit, we can represent it as a tree.
 
 
-[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
+[DIAGRAM: 3D cube]
 
 
 The Middle Way here is not a position between two extremes. It is the recognition that the structure itself is infinite. Each definition of everything produces two further definitions, and the process continues without termination.
@@ -222,7 +258,7 @@ The Middle Way here is not a position between two extremes. It is the recognitio
 We can now apply the same structure to a more concrete case: the notion of self.
 
 
-[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
+[DIAGRAM: 3D cube]
 
 
 Here, the self is not treated as a substance or object, but as a relational configuration defined through observation. This aligns directly with Ngrjuna's analysis:
@@ -240,7 +276,7 @@ The self, in this view, is neither identical with what is observed nor separable
 The chapter title may seem puzzling at first. Why invoke the biblical "Tree of Life" while drawing primarily on Buddhist philosophy? The answer becomes clearer when we return to the abstract structure itself.
 
 
-[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
+[DIAGRAM: 3D cube]
 
 
 This structure is, at its core, a binary tree. It encodes an unbounded space of possibilities. If we substitute + and - with 1 and 0, the tree generates every possible binary string. In this sense, it is boundless, internally harmonious, and capable of infinite creative expression.
@@ -301,6 +337,12 @@ Another crucial distinction must be made. Although we cannot assume the existenc
 
 The moment of resolution can be described as a tick - a structural event that propagates across every branch of the newly forming duality graph.
 
+
+0.85
+
+Definition (Tick): A tick is not time. It is the minimal causal notion permitted in a pre-temporal framework: the fact that one resolution can constrain the next. Because no structure exists beyond E=\E^+,E^-\, every resolution must output only + or -, and the output must be admissible as input to further resolution. "Event" here means update/constraint inheritance, not a happening in an external time or void.
+
+
 To make this concrete, let us look at the primitive unfolding from the very beginning - the symbolic moment of the Fall, and our metaphorical Adam and Eve.
 
 In the beginning, there is duality - "dual Adam," pre-Eve in biblical terms.
@@ -322,7 +364,7 @@ This is the exact moment of the Fall - the moment the system becomes self-aware.
 -+, +- &
 
 
-[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
+[DIAGRAM: 3D cube]
 
 
 As you can see here, new mirrors just appeared:
@@ -364,6 +406,8 @@ Before moving forward, it is worth emphasizing that we are working with metaphor
 What is discussed here resonates with both biblical and Buddhist traditions - where similar structures appear as Tree of Life / Nirvana and Tree of Knowledge / Samsara - as well as with more modern thinkers. Related formulations appear in Spencer-Brown's Laws of Form, in Christopher Langan's CTMU, and in John Archibald Wheeler's It from Bit.
 
 These ideas are not being developed or incorporated here. They are acknowledged only to note that fragments of this structure were independently discovered - and in some cases rigorously formalized - by others who asked the same fundamental questions.
+
+The word "Fall" names the first globally consequential tick (resolution event) in the model; it is not a theological claim.
 
 As we move forward, the discussion will gradually become less philosophically religious and more structurally explicit, touching information theory, mathematics, and physics - not as foundations, but as later expressions of the same underlying structure.
 
@@ -595,7 +639,7 @@ An important consequence of this process is that expressive complexity does not 
 
 This was a long chapter, and it sets the tone for the rest of the book. It therefore makes sense to end it with a small set of core conclusions - the minimum that has been established so far.
 
-What we call reality is an emergent structure that can plausibly originate from the introduction of absolute duality into the void. Duality, by its nature, is an infinitely recursive structure.
+What we call reality is an emergent structure that can plausibly originate from the appearance of duality as the minimal primitive (without assuming any background container). Duality, by its nature, is an infinitely recursive structure.
 
 Although duality appears superficially symmetric, asymmetry emerges naturally through recursion and the formation of higher-order dualities with hierarchical and causal structure. No external bias is introduced; bias arises internally from the generative process itself. A clear example is Rule 110 and its mirror, Rule 124: their exceptional expressive power makes them highly connected within the Tree of Knowledge, causing them to dominate subsequent iterations of the generative fractal.
 
@@ -761,7 +805,7 @@ Dimensions, therefore, emerge naturally from duality itself.
 Consider a physical object as a set of properties expressed across multiple dimensions. Imagine a perfect sphere in a vacuum. It could be described by
 
 
-\\x, y, z, , , _r, _g, _b\\
+x, y, z, θ, φ, r, g, b
 
 
 These labels are arbitrary; each value could itself be represented as a continuous string of - and +. What matters is not the label, but the ordered structure.
@@ -3229,8 +3273,6 @@ APPENDIX D: INTERACTIVE READING
 
 
 The complete text of this book is provided in electronic form. Readers are encouraged to use this version for interactive exploration, including analysis with language models or other tools.
-
-
 
 `;
 
