@@ -3234,41 +3234,54 @@ The complete text of this book is provided in electronic form. Readers are encou
 
 `;
 
-const copyButton = document.getElementById('copyButton');
-const copiedMessage = document.getElementById('copiedMessage');
-const copiedOverlay = document.getElementById('copiedOverlay');
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const copyButton = document.getElementById('copyButton');
+    const copiedMessage = document.getElementById('copiedMessage');
+    const copiedOverlay = document.getElementById('copiedOverlay');
 
-copyButton.addEventListener('click', async () => {
-    try {
-        await navigator.clipboard.writeText(promptText);
-        
-        // Show success message with overlay
-        copiedOverlay.classList.add('show');
-        copiedMessage.classList.add('show');
-        
-        // Hide message after 2 seconds
-        setTimeout(() => {
-            copiedOverlay.classList.remove('show');
-            copiedMessage.classList.remove('show');
-        }, 2000);
-    } catch (err) {
-        console.error('Failed to copy:', err);
-        // Fallback for older browsers
-        const textArea = document.createElement('textarea');
-        textArea.value = promptText;
-        document.body.appendChild(textArea);
-        textArea.select();
+    // Check if elements exist before attaching event listeners
+    if (!copyButton || !copiedMessage || !copiedOverlay) {
+        console.error('Required elements not found:', {
+            copyButton: !!copyButton,
+            copiedMessage: !!copiedMessage,
+            copiedOverlay: !!copiedOverlay
+        });
+        return;
+    }
+
+    copyButton.addEventListener('click', async () => {
         try {
-            document.execCommand('copy');
+            await navigator.clipboard.writeText(promptText);
+            
+            // Show success message with overlay
             copiedOverlay.classList.add('show');
             copiedMessage.classList.add('show');
+            
+            // Hide message after 2 seconds
             setTimeout(() => {
                 copiedOverlay.classList.remove('show');
                 copiedMessage.classList.remove('show');
             }, 2000);
         } catch (err) {
-            alert('Failed to copy to clipboard');
+            console.error('Failed to copy:', err);
+            // Fallback for older browsers
+            const textArea = document.createElement('textarea');
+            textArea.value = promptText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                copiedOverlay.classList.add('show');
+                copiedMessage.classList.add('show');
+                setTimeout(() => {
+                    copiedOverlay.classList.remove('show');
+                    copiedMessage.classList.remove('show');
+                }, 2000);
+            } catch (err) {
+                alert('Failed to copy to clipboard');
+            }
+            document.body.removeChild(textArea);
         }
-        document.body.removeChild(textArea);
-    }
+    });
 });
