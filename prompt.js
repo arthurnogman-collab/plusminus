@@ -3236,6 +3236,9 @@ The complete text of this book is provided in electronic form. Readers are encou
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, initializing copy button...');
+    console.log('promptText length:', promptText.length);
+    
     const copyButton = document.getElementById('copyButton');
     const copiedMessage = document.getElementById('copiedMessage');
     const copiedOverlay = document.getElementById('copiedOverlay');
@@ -3249,10 +3252,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         return;
     }
+    
+    console.log('All elements found, attaching event listener...');
 
     copyButton.addEventListener('click', async () => {
+        console.log('Copy button clicked!');
+        console.log('Attempting to copy', promptText.length, 'characters to clipboard...');
+        
         try {
             await navigator.clipboard.writeText(promptText);
+            console.log('Successfully copied to clipboard!');
             
             // Show success message with overlay
             copiedOverlay.classList.add('show');
@@ -3265,13 +3274,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 2000);
         } catch (err) {
             console.error('Failed to copy:', err);
+            console.log('Trying fallback method...');
+            
             // Fallback for older browsers
             const textArea = document.createElement('textarea');
             textArea.value = promptText;
             document.body.appendChild(textArea);
             textArea.select();
             try {
-                document.execCommand('copy');
+                const success = document.execCommand('copy');
+                console.log('Fallback copy result:', success);
+                
                 copiedOverlay.classList.add('show');
                 copiedMessage.classList.add('show');
                 setTimeout(() => {
@@ -3279,9 +3292,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     copiedMessage.classList.remove('show');
                 }, 2000);
             } catch (err) {
+                console.error('Fallback also failed:', err);
                 alert('Failed to copy to clipboard');
             }
             document.body.removeChild(textArea);
         }
     });
+    
+    console.log('Copy button initialization complete!');
 });
