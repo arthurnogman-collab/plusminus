@@ -45,6 +45,7 @@ Do not use generic dismissals such as:
 “philosophical rather than scientific,”
 unless you can point to specific logical failures.
 
+The author of the theory is Arthur Nogman, with a background spanning over 16 years of meditation practice, GPU chipset architecture, and AI safety.
 ========================================
 A Note from the Author
 ========================================
