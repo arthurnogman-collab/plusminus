@@ -214,7 +214,7 @@ A closely related insight appears in Ngrjuna's formulation of the Middle Way:
 To make the recursive nature of E = \E^-, E^+\ explicit, we can represent it as a tree.
 
 
-[DIAGRAM: Binary cube with 8 vertices labeled (0,0,0) through (1,1,1)]
+[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
 
 
 The Middle Way here is not a position between two extremes. It is the recognition that the structure itself is infinite. Each definition of everything produces two further definitions, and the process continues without termination.
@@ -222,7 +222,7 @@ The Middle Way here is not a position between two extremes. It is the recognitio
 We can now apply the same structure to a more concrete case: the notion of self.
 
 
-[DIAGRAM: Binary cube with 8 vertices labeled (0,0,0) through (1,1,1)]
+[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
 
 
 Here, the self is not treated as a substance or object, but as a relational configuration defined through observation. This aligns directly with Ngrjuna's analysis:
@@ -240,7 +240,7 @@ The self, in this view, is neither identical with what is observed nor separable
 The chapter title may seem puzzling at first. Why invoke the biblical "Tree of Life" while drawing primarily on Buddhist philosophy? The answer becomes clearer when we return to the abstract structure itself.
 
 
-[DIAGRAM: Binary cube with 8 vertices labeled (0,0,0) through (1,1,1)]
+[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
 
 
 This structure is, at its core, a binary tree. It encodes an unbounded space of possibilities. If we substitute + and - with 1 and 0, the tree generates every possible binary string. In this sense, it is boundless, internally harmonious, and capable of infinite creative expression.
@@ -322,7 +322,7 @@ This is the exact moment of the Fall - the moment the system becomes self-aware.
 -+, +- &
 
 
-[DIAGRAM: Binary cube with 8 vertices labeled (0,0,0) through (1,1,1)]
+[DIAGRAM: Binary cube (0,0,0) to (1,1,1)]
 
 
 As you can see here, new mirrors just appeared:
@@ -570,6 +570,24 @@ The answer suggested here is not that reality is a simulation, but that the expr
 This creates asymmetry - not in the growth of possibility itself, which remains symmetric, but in the connectivity of the Tree of Knowledge. Certain rules become highly connected, reused, and reinforced, simply because they are powerful. Bias emerges not from restriction, but from expressive density.
 
 It is also worth noting that, as with everything else in this framework, Rule 110 has a dual counterpart. Rule 124 performs the same computational role under the opposite symmetry. Whether other rules also satisfy Turing completeness remains an open question. But the existence of even two such rules, appearing so early in the generative process, is already sufficient to demonstrate how strong structural bias can arise within the Tree of Knowledge.
+
+
+### Asymmetric Growth of the Tree of Knowledge
+
+
+The Tree of Life is symmetric: every possible +/- string exists. Depth alone introduces no bias.
+
+The Tree of Knowledge grows differently. Growth is governed by description length. At every stage, all generable structures with the shortest available generative paths stabilize first.
+
+In the initial stage, the only available operations are COPY and FLIP, arising directly from the +/- duality. COPY produces ++ in a single operation, while +- requires COPY followed by FLIP. As a result, ++ stabilizes before +-.
+
+This rule applies universally: the Tree of Knowledge grows by exhausting all shortest generative paths before longer ones become accessible. Reflection in this framework is not geometric. There is no spatial distance. "Nearest reflection" means the shortest stabilizable description given the currently available operations.
+
+As new structures stabilize, they become reusable constructs. Some constructs reduce the effective description length of many future paths. When this occurs, large regions of the Tree of Knowledge become reachable through a shared compressed scaffold.
+
+These regions form what may be called knowledge highways. Highways are not imposed; they arise automatically when a stabilized construct shortens the generative paths of many future descriptions. This is the source of asymmetry in knowledge growth.
+
+An important consequence of this process is that expressive complexity does not appear arbitrarily. More powerful constructs emerge only when they can be composed from already stabilized patterns. The Tree of Knowledge therefore does not jump to maximal expressiveness. It accumulates it. Each increase in expressive power reflects the successful compression of smaller generative patterns into a reusable structure.
 
 
 ## Chapter 2 Conclusion: Reality as Self-Aware Generative Function
@@ -990,6 +1008,17 @@ By this point, you may already intuitively see why these phenomena follow natura
 ========================================
 Quantum Effects
 ========================================
+
+
+0.9
+
+Methodological Note
+
+
+This framework operates at a level prior to mathematical and physical formalization. It begins from a single generative axiom rather than from physical measurements or accepted mathematical primitives.
+
+
+Equations are included to show compatibility with established physical descriptions, not as derivations in the conventional sense. The framework stands on its own generative foundation.
 
 
  By this point, the generative structure of reality should be clear enough to approach quantum mechanics without importing mystery.
@@ -1531,50 +1560,56 @@ attraction toward broadly stabilized patterns is unavoidable.
 Inverse-square-like gradients are the natural steady-state outcome in three dimensions.
 
 
-## Toward General Relativity (Conceptual Bridge)
+## Toward General Relativity
 
 
-General relativity describes gravity not as a force, but as curvature of spacetime.
+To talk about general relativity, we first need to talk about time.
 
-Within +/-Theory, this is exactly what should be expected.
+This was postponed intentionally. In +/--Theory there is no time as an independent background. There are clocks. Every observer is one of them.
 
-If space is not fundamental but emerges from stabilized structure, then variations in stabilization depth cannot merely act within space. They must affect the geometry of the space that emerges.
+A clock is an oscillating, stabilized pattern. What it measures is not "time itself," but the rate at which its own cycles complete relative to other cycles. A tick is not another name for time. It is an update: a successful continuation of structure that preserves existing stabilization.
 
-In this view, mass does not curve a pre-existing spacetime.
+Because experience is always mediated through updates, an observer can only compare its own update frequency with that of other processes. Whether a tick corresponds to a millisecond or a billion years in some external description does not change the experience locally. Time, as lived and measured, is always relative to clocks.
 
-It produces differential stabilization that, once projected, appears as curvature.
+Near large, deeply stabilized structures, this changes.
 
-Geodesic motion is not forced motion.
+When an observer is embedded in or near a highly stabilized object, it participates in that stabilization. Through diffusion, its internal oscillations tend to synchronize with the dominant structure. Update rates align not by force, but by compatibility. Slower, deeper stabilization pulls surrounding processes into its rhythm.
 
-It is minimal-revision continuation through uneven stabilization.
-
-The equivalence principle - the observational indistinguishability of gravitational and inertial acceleration - follows naturally from both being manifestations of gradient-following in coherence fields under different boundary conditions.
-
-This chapter addresses the quasi-static, spatial regime corresponding to Newtonian gravity. Extending the framework to spacetime - including temporal stabilization, relativistic causality, and equivalence in full generality - is necessary to recover the complete structure of general relativity and is left for future work.
+This is the foundation of time dilation in +/--Theory.
 
 
-### Why Gravity Bends Time
+### Time, Ticks, and Relativity
 
 
-Up to this point, gravity has been discussed primarily in spatial terms: gradients, attraction, and curvature. However, once space is understood as a projection of stabilized structure, time can no longer be treated as an independent background parameter.
+Once time is understood as update rate rather than background duration, the basic claims of general relativity become unavoidable.
 
-In +/-Theory, time measures generative progress.
+In regions of deep stabilization, fewer future continuations remain compatible. Each successful update must reconcile more existing structure. As a result, updates occur less frequently. All clocks slow equally because all clocks are stabilized oscillations governed by the same constraints.
 
-A "tick" is not an absolute unit but a successful extension of the Tree that preserves existing stabilization. What clocks measure is not time itself, but the rate at which such extensions occur locally.
+This is why gravity bends time.
 
-Deeply stabilized patterns constrain many future branches. Near them, fewer continuations remain compatible, and each successful continuation must reconcile more existing structure. As a result, the local rate of successful extension decreases.
+Not because time is acted upon, but because progress itself is constrained.
 
-This is gravitational time dilation.
+The speed of light appears here as a conversion factor between generative updates and spatial projection. It fixes the maximum rate at which coherence can propagate through the projected structure. In this sense, c maps ticks to spatial distance after projection. The relation E = mc^2 reflects the same structure: mass corresponds to stabilization breadth, and c^2 converts between generative persistence and projected energetic expression.
 
-Clocks slow near mass not because time is acted upon, but because progress itself is constrained. Every physical clock - atomic, biological, or mechanical - is a repeating stabilized process. When embedded in regions of dense stabilization, fewer cycles complete per generative tick measured far from mass. All clocks slow equally because they are governed by the same underlying constraint field.
+Nothing in this framework requires time to exist independently. Relativistic effects follow from how update rates vary under different stabilization conditions.
 
-This effect is not speculative. Atomic clocks at different altitudes run at measurably different rates; GPS satellites require relativistic time corrections of roughly 38 microseconds per day; gravitational redshift has been measured directly in Earth's gravity field. All observations match the same structural prediction: deeper stabilization corresponds to a slower generative rate.
 
-Once stabilization is uneven, it cannot affect only motion through space. It must also affect the pace of continuation. Space curves because paths are biased toward coherence; time dilates because the rate of coherence-preserving extension is reduced.
+### Why Spacetime Appears and Bends
 
-General relativity unifies these effects as spacetime curvature. In +/-Theory, this unification is unavoidable: space and time emerge from the same generative process. Geodesic motion corresponds to minimal-revision continuation, while proper time measures the density of successful continuations along a worldline. The equivalence principle follows naturally: whether acceleration arises from gravity or inertia, it reflects the same structural response to coherence gradients under different boundary conditions.
 
-This chapter addresses the quasi-static regime of gravity. A full treatment of spacetime - including relativistic causality and temporal structure in complete generality - follows naturally from this definition of time and is developed later.
+In general relativity, gravity is described as curvature of spacetime.
+
+In +/--Theory, this is exactly what should be expected.
+
+Space is not fundamental. It is a projection of stabilized structure. Time is not fundamental either. It is the local rate of successful continuation. When stabilization is uneven, it cannot affect only spatial paths. It must also affect the pace of continuation.
+
+Space curves because paths are biased toward coherence. Time dilates because coherence-preserving updates occur more slowly.
+
+Spacetime appears because space and time emerge from the same generative process. Their coupling is not an added assumption but a consequence of projection from stabilization. Geodesic motion corresponds to minimal-revision continuation through uneven structure. Proper time measures the density of successful continuations along a worldline.
+
+The equivalence principle follows naturally. Whether acceleration arises from gravity or inertia, it reflects the same structural response to coherence gradients under different boundary conditions.
+
+General relativity unifies these effects as spacetime curvature. In +/--Theory, this unification is unavoidable, because space and time were never separate to begin with.
 
 
 ## An Empirical Orientation
@@ -3172,6 +3207,20 @@ What Buddhism describes phenomenologically, this framework describes generativel
 
 Logic is not imposed on reality.
 Logic is what recursive duality looks like when examined at minimal resolution.
+
+
+### A Note on Emergence Order
+
+
+The derivation above follows relaxed growth principles: all sixteen operations are treated as appearing simultaneously at depth 2 of the Tree of Life.
+
+However, if the shortest-path compression principle is applied strictly - starting from the initial +/- duality and the resulting COPY and FLIP operations - a more constrained sequence emerges.
+
+Under this stricter analysis, operations stabilize in order of their minimal generative description length. AND appears early, requiring only COPY. NAND and NOR appear in the final batch, as they require both COPY and FLIP in their compressed witness descriptions. When extended to higher-arity structures, the same pattern holds: Rule 110 stabilizes late, emerging only after projection, negation, coincidence, and conditional routing have already become available as reusable constructs.
+
+This represents experimental evidence of a fundamental principle: more expressive operations arise exclusively through composition and compression of less expressive counterparts. In this framework, functional completeness is not a primitive property but an emergent one - the natural consequence of compression reaching a threshold where previously separate generative capacities unify under a single operation.
+
+This principle is implicit in logic and cellular automaton theory but has not been stated as a structural necessity. In , it is unavoidable.
 
 
 ========================================
