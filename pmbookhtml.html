@@ -24,6 +24,10 @@
 <meta name="twitter:description" content="±Theory by Arthur Nogman — Derivation of logic, Laws of Form (Spencer-Brown), formalized Buddhism, and the nature of reality.">
 <meta name="twitter:image" content="https://theplusminus.xyz/good.png">
 
+<!-- Analytics (GA4) -->
+<script src="analytics-config.js"></script>
+<script src="analytics.js" defer></script>
+
 <!-- Structured data -->
 <script type="application/ld+json">
 {
@@ -159,31 +163,32 @@ a:hover {
     /* Avoid breaking inside elements */
     h2, h3 {
         page-break-after: avoid !important;
-         !important;
+        page-break-inside: avoid !important;
     }
     
     /* Keep paragraphs together when possible */
     p {
-         !important;
+        page-break-inside: avoid !important;
         orphans: 3;
         widows: 3;
     }
     
     /* Never break tables */
     table {
-         !important;
+        page-break-inside: avoid !important;
         page-break-before: auto !important;
         page-break-after: auto !important;
     }
     
     /* Keep blockquotes together */
     blockquote {
-         !important;
+        page-break-inside: avoid !important;
     }
     
     /* Avoid breaking images */
     img {
-         !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
     }
     
     
@@ -2311,5 +2316,11 @@ Or visit: <a href="https://theplusminus.xyz" style="color:#2a2a2a;text-decoratio
 
 
 <script src="prompt.js"></script>
+<script>
+  // Analytics: count book opens explicitly (in addition to GA page_view)
+  window.addEventListener('DOMContentLoaded', () => {
+    try { window.pmTrack?.event('open_book_online', { location: 'pmbookhtml' }); } catch (_) {}
+  });
+</script>
 <script src="floating-buttons.js"></script>
 </body></html>

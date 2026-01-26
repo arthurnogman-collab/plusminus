@@ -290,7 +290,7 @@
                 <button class="popup-close" onclick="document.getElementById('aiNavPopup').classList.remove('show')">×</button>
                 <div class="popup-title">AI Navigator</div>
                 <div class="ai-nav-buttons">
-                    <a href="https://chatgpt.com/g/g-69616a989c888191bea66415401ab261-theory-the-ultimate-generative-model" target="_blank" class="ai-nav-option">Custom GPT (ChatGPT)</a>
+                    <a href="https://chatgpt.com/g/g-69616a989c888191bea66415401ab261-theory-the-ultimate-generative-model" target="_blank" class="ai-nav-option" id="pmCustomGptLink">Custom GPT (ChatGPT)</a>
                     <button class="ai-nav-option" id="systemPromptBtn">System Prompt (Other Models)</button>
                 </div>
             </div>
@@ -312,10 +312,12 @@
         
         // Button click handlers
         document.getElementById('donateBtn').addEventListener('click', () => {
+            try { window.pmTrack?.event('open_support_popup', { location: 'pmbookhtml' }); } catch (_) {}
             document.getElementById('donatePopup').classList.add('show');
         });
         
         document.getElementById('aiNavBtn').addEventListener('click', () => {
+            try { window.pmTrack?.event('open_ai_navigator', { location: 'pmbookhtml' }); } catch (_) {}
             document.getElementById('aiNavPopup').classList.add('show');
         });
         
@@ -344,12 +346,19 @@
                 await copyToClipboard(address);
             });
         });
+
+        // Analytics: Custom GPT click from popup
+        const pmCustomGptLink = document.getElementById('pmCustomGptLink');
+        pmCustomGptLink?.addEventListener('click', () => {
+            try { window.pmTrack?.event('click_custom_gpt', { location: 'pmbookhtml_popup' }); } catch (_) {}
+        });
         
         // System prompt button - needs to access promptText from prompt.js
         const systemPromptBtn = document.getElementById('systemPromptBtn');
         if (systemPromptBtn) {
             systemPromptBtn.addEventListener('click', async () => {
                 if (typeof promptText !== 'undefined') {
+                    try { window.pmTrack?.event('copy_system_prompt', { location: 'pmbookhtml_popup' }); } catch (_) {}
                     await copyToClipboard(promptText);
                 } else {
                     alert('System prompt not available. Please ensure prompt.js is loaded.');

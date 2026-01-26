@@ -10,6 +10,10 @@
     <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
     <link rel="canonical" href="https://theplusminus.xyz/">
 
+    <!-- Analytics (GA4) -->
+    <script src="analytics-config.js"></script>
+    <script src="analytics.js" defer></script>
+
     <!-- Open Graph -->
     <meta property="og:site_name" content="±Theory">
     <meta property="og:type" content="website">
@@ -524,7 +528,7 @@
 
             <div class="section-title">Access Tools</div>
             <div class="button-container">
-                <a href="https://chatgpt.com/g/g-69616a989c888191bea66415401ab261-theory-the-ultimate-generative-model" target="_blank" class="button">Custom GPT (ChatGPT)</a>
+                <a id="customGptLink" href="https://chatgpt.com/g/g-69616a989c888191bea66415401ab261-theory-the-ultimate-generative-model" target="_blank" class="button">Custom GPT (ChatGPT)</a>
                 <button id="copyButton">System Prompt (Other Models)</button>
             </div>
         </div>
@@ -533,8 +537,8 @@
         <div class="tab-content" id="book-content">
             <img src="PMBOOK.jpg" alt="±Theory Book Cover" class="book-cover">
             <div class="button-container">
-                <a href="https://a.co/d/gk95e00" target="_blank" class="button">Get the Book on Amazon</a>
-                <a href="pmbookhtml.html" class="button">Read for free</a>
+                <a id="amazonLink" href="https://a.co/d/gk95e00" target="_blank" class="button">Get the Book on Amazon</a>
+                <a id="readFreeLink" href="pmbookhtml.html" class="button">Read for free</a>
             </div>
         </div>
 
@@ -675,6 +679,23 @@
         const walletButtons = document.querySelectorAll('.wallet-button');
         const copiedOverlay = document.getElementById('copiedOverlay');
         const copiedMessage = document.getElementById('copiedMessage');
+
+        // Analytics: key outbound/copy actions
+        const amazonLink = document.getElementById('amazonLink');
+        const readFreeLink = document.getElementById('readFreeLink');
+        const customGptLink = document.getElementById('customGptLink');
+
+        amazonLink?.addEventListener('click', () => {
+            window.pmTrack?.event('click_amazon', { location: 'book_tab' });
+        });
+
+        readFreeLink?.addEventListener('click', () => {
+            window.pmTrack?.event('open_book_online', { location: 'book_tab' });
+        });
+
+        customGptLink?.addEventListener('click', () => {
+            window.pmTrack?.event('click_custom_gpt', { location: 'ai_tab' });
+        });
 
         walletButtons.forEach(button => {
             button.addEventListener('click', async () => {

@@ -3301,6 +3301,7 @@ document.addEventListener('DOMContentLoaded', () => {
     copyButton.addEventListener('click', async () => {
         console.log('Copy button clicked!');
         console.log('Attempting to copy', promptText.length, 'characters to clipboard...');
+        try { window.pmTrack?.event('copy_system_prompt', { location: 'index' }); } catch (_) {}
         
         try {
             await navigator.clipboard.writeText(promptText);
