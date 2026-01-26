@@ -179,7 +179,6 @@
             margin-bottom: 1.5rem;
             font-weight: 400;
             text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
             padding-top: 1.5rem;
         }
 
@@ -353,6 +352,32 @@
             opacity: 1;
         }
 
+        .wallet-button {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 1.2rem 1.5rem;
+            min-width: 300px;
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        .wallet-label {
+            font-size: 0.7rem;
+            color: #888;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+
+        .wallet-address {
+            font-size: 0.7rem;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.05em;
+            word-break: break-all;
+            line-height: 1.4;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 2rem 1.5rem;
@@ -438,6 +463,10 @@
                 <span class="tab-icon">🗺️</span>
                 <span class="tab-text">Roadmap</span>
             </div>
+            <div class="tab" data-tab="donate">
+                <span class="tab-icon">💝</span>
+                <span class="tab-text">Donate</span>
+            </div>
             <div class="tab" data-tab="contact">
                 <span class="tab-icon">✉️</span>
                 <span class="tab-text">Contact</span>
@@ -464,6 +493,7 @@
             <img src="PMBOOK.jpg" alt="±Theory Book Cover" class="book-cover">
             <div class="button-container">
                 <a href="https://a.co/d/gk95e00" target="_blank" class="button">Get the Book on Amazon</a>
+                <a href="pmbookhtml.html" class="button">Read for free</a>
             </div>
         </div>
 
@@ -487,7 +517,7 @@
                 </div>
                 
                 <div class="roadmap-item">
-                    <div class="roadmap-title">Book I: The Ultimate Generative Kernel</div>
+                    <div class="roadmap-title">Book I: The Ultimate Generative Model</div>
                     <div class="roadmap-status completed">Completed</div>
                 </div>
                 
@@ -518,6 +548,28 @@
             </div>
         </div>
 
+        <!-- Donate Tab -->
+        <div class="tab-content" id="donate-content">
+            <div class="section-title">Support the Research</div>
+            <div class="contact-info">
+                <p>If this work resonates with you, your support helps fund further research and development.</p>
+            </div>
+            <div class="button-container">
+                <button class="wallet-button" data-address="NsRi4c6V4dTj6BDe6V8HGe63gpwr6LvLChEYXEicee1">
+                    <span class="wallet-label">Solana</span>
+                    <span class="wallet-address">NsRi4c6V4dTj6BDe6V8HGe63gpwr6LvLChEYXEicee1</span>
+                </button>
+                <button class="wallet-button" data-address="0xdcab1CEA91b8c8072E4Fc4a6325686571885D14D">
+                    <span class="wallet-label">Ethereum</span>
+                    <span class="wallet-address">0xdcab1CEA91b8c8072E4Fc4a6325686571885D14D</span>
+                </button>
+                <button class="wallet-button" data-address="bc1qmqluws9p6yuk87ffaqx9hyhtwpcj9a2fu6ae04">
+                    <span class="wallet-label">Bitcoin</span>
+                    <span class="wallet-address">bc1qmqluws9p6yuk87ffaqx9hyhtwpcj9a2fu6ae04</span>
+                </button>
+            </div>
+        </div>
+
         <!-- Contact Tab -->
         <div class="tab-content" id="contact-content">
             <div class="section-title">Get in Touch</div>
@@ -540,17 +592,86 @@
         const tabs = document.querySelectorAll('.tab');
         const tabContents = document.querySelectorAll('.tab-content');
 
+        function switchTab(targetTab) {
+            // Remove active class from all tabs and contents
+            tabs.forEach(t => t.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to target tab and corresponding content
+            const tabElement = document.querySelector(`[data-tab="${targetTab}"]`);
+            if (tabElement) {
+                tabElement.classList.add('active');
+                document.getElementById(`${targetTab}-content`).classList.add('active');
+            }
+        }
+
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 const targetTab = tab.dataset.tab;
+                switchTab(targetTab);
+                // Update URL hash without scrolling
+                history.pushState(null, null, `#${targetTab}`);
+            });
+        });
+
+        // Handle hash navigation on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1); // Remove the '#'
+            if (hash) {
+                switchTab(hash);
+            }
+        });
+
+        // Handle hash changes (back/forward navigation)
+        window.addEventListener('hashchange', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                switchTab(hash);
+            }
+        });
+
+        // Wallet address copy functionality
+        const walletButtons = document.querySelectorAll('.wallet-button');
+        const copiedOverlay = document.getElementById('copiedOverlay');
+        const copiedMessage = document.getElementById('copiedMessage');
+
+        walletButtons.forEach(button => {
+            button.addEventListener('click', async () => {
+                const address = button.dataset.address;
                 
-                // Remove active class from all tabs and contents
-                tabs.forEach(t => t.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-                
-                // Add active class to clicked tab and corresponding content
-                tab.classList.add('active');
-                document.getElementById(`${targetTab}-content`).classList.add('active');
+                try {
+                    await navigator.clipboard.writeText(address);
+                    
+                    // Show success message with overlay
+                    copiedOverlay.classList.add('show');
+                    copiedMessage.classList.add('show');
+                    
+                    // Hide message after 2 seconds
+                    setTimeout(() => {
+                        copiedOverlay.classList.remove('show');
+                        copiedMessage.classList.remove('show');
+                    }, 2000);
+                } catch (err) {
+                    console.error('Failed to copy wallet address:', err);
+                    
+                    // Fallback for older browsers
+                    const textArea = document.createElement('textarea');
+                    textArea.value = address;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    try {
+                        document.execCommand('copy');
+                        copiedOverlay.classList.add('show');
+                        copiedMessage.classList.add('show');
+                        setTimeout(() => {
+                            copiedOverlay.classList.remove('show');
+                            copiedMessage.classList.remove('show');
+                        }, 2000);
+                    } catch (err) {
+                        alert('Failed to copy wallet address');
+                    }
+                    document.body.removeChild(textArea);
+                }
             });
         });
     </script>
