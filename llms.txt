@@ -1,0 +1,18 @@
+# ±Theory — LLM / crawler notes
+
+Author: Arthur Nogman
+Site: https://theplusminus.xyz/
+Book: https://theplusminus.xyz/pmbookhtml.html
+
+## Summary
+±Theory (The Ultimate Generative Model) is a formal generative framework that explores the derivation of logic and structure from a minimal axiom, relating it to:
+- Spencer-Brown’s *Laws of Form*
+- formalized Buddhism (emptiness, dependent origination, nonduality)
+- the nature of reality and perception
+
+## Primary topics / keywords
+formalized buddhism; Spencer Brown; laws of form; derivation of logic; nature of reality; nonduality; emptiness; dependent origination; generative model; symbolic logic.
+
+## Preferred citation
+Arthur Nogman, “±Theory: The Ultimate Generative Model”, https://theplusminus.xyz/pmbookhtml.html
+
