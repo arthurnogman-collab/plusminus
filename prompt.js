@@ -65,7 +65,7 @@ Preface
 
 Preface
 
- Los Angeles, 2026.
+ Los Angeles, 2025.
 
 Nothing dramatic is happening. The sun keeps shining.
 
