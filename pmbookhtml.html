@@ -60,8 +60,13 @@
 </script>
 
 <style>
+/* ══════════════════════════════════════════════════════════════
+   ±Theory — Post-Apocalyptic Archive
+   A recovered document from after the fall
+   ══════════════════════════════════════════════════════════════ */
+
 html {
-    background: #f5f5f5;
+    background: #1a1a1a;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -69,45 +74,50 @@ html {
 }
 
 body {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    line-height: 1.8;
-    max-width: 850px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    line-height: 1.75;
+    max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    padding: 2em;
-    color: #1a1a1a;
-    background: #ffffff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 3em 5em;
+    color: #c8c4bc;
+    background: #232220;
     box-sizing: border-box;
+    border-left: 1px solid #3a3835;
+    border-right: 1px solid #3a3835;
 }
 
+/* Links - muted amber, like emergency lighting */
 a {
-    color: #2563eb;
+    color: #c9a857;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.2s;
 }
 
 a:hover {
-    border-bottom: 1px solid #2563eb;
+    color: #e0c068;
+    text-decoration: underline;
 }
 
+/* Table of Contents */
 #toc {
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 8px;
+    background: #1e1d1b;
+    border: 1px solid #3a3835;
+    border-radius: 2px;
     padding: 2em;
-    margin: 3em 0 4em 0;
+    margin: 2em 0 3em 0;
 }
 
 #toc h2 {
     margin-top: 0;
-    color: #1a1a1a;
-    font-size: 1.8em;
-    border-bottom: 2px solid #dee2e6;
+    color: #a8a49a;
+    font-size: 1.4em;
+    border-bottom: 1px solid #3a3835;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 #toc ul {
@@ -116,35 +126,157 @@ a:hover {
 }
 
 #toc ul ul {
-    padding-left: 2em;
-    margin-top: 0.5em;
-    border-left: 2px solid #e9ecef;
+    padding-left: 1.5em;
+    margin-top: 0.4em;
+    border-left: 1px solid #3a3835;
 }
 
 #toc li {
-    margin: 0.7em 0;
+    margin: 0.6em 0;
 }
 
 #toc a {
-    color: #1a1a1a;
-    font-weight: 500;
+    color: #908c82;
 }
 
 #toc a:hover {
-    color: #2563eb;
+    color: #c9a857;
 }
 
-.back-to-top {
-    display: inline-block;
-    margin: 2em 0 1em 0;
-    font-size: 0.9em;
-    color: #6b7280;
-}
-
+/* Scroll offset */
 .chapter-title, .section-title {
     scroll-margin-top: 2em;
 }
- h1.chapter-title{font-size:2.5em;text-align:center;margin:3em 0 2em;font-family:Arial,sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;} h2.section-title{font-size:1.8em;margin:2.5em 0 1em;font-family:Arial,sans-serif;font-weight:600;} h3.subsection-title{font-size:1.4em;margin:2em 0 0.8em;font-family:Arial,sans-serif;font-weight:600;} p{margin:0 0 1.2em;text-align:justify;} ul,ol{margin:1.2em 0;padding-left:2.5em;} li{margin:0.5em 0;} blockquote{font-style:italic;margin:2em 3em;padding-left:1.5em;border-left:4px solid #999;} .diagram-container{text-align:center;margin:2.5em 0;padding:1em;} .diagram-container img{max-width:100%;height:auto;border:1px solid #ddd;border-radius:6px;padding:1em;background:white;display:block;margin:0 auto;} .math-inline{vertical-align:middle;height:1.4em;margin:0 0.2em;display:inline-block;} .math-display{text-align:center;margin:2em 0;overflow-x:auto;} .math-display img{max-width:100%;height:auto;} 
+
+/* Chapter Titles */
+h1.chapter-title {
+    font-size: 1.9em;
+    text-align: center;
+    margin: 3em 0 1.5em;
+    font-weight: normal;
+    color: #d4d0c6;
+    border-bottom: 1px solid #3a3835;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Section Titles */
+h2.section-title {
+    font-size: 1.35em;
+    margin: 2.5em 0 1em;
+    font-weight: 600;
+    color: #b8b4aa;
+    letter-spacing: 0.03em;
+}
+
+/* Subsection Titles */
+h3.subsection-title {
+    font-size: 1.15em;
+    margin: 2em 0 0.8em;
+    font-weight: 600;
+    color: #a8a49a;
+}
+
+/* Paragraphs */
+p {
+    margin: 0 0 1.3em;
+    text-align: left;
+}
+
+/* Lists */
+ul, ol {
+    margin: 1.3em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+/* Blockquotes - like rediscovered wisdom */
+blockquote {
+    font-style: italic;
+    margin: 1.5em 0;
+    padding: 0.8em 1.5em;
+    border-left: 2px solid #5a5650;
+    color: #9a968c;
+    background: rgba(0,0,0,0.15);
+}
+
+/* Diagrams and figures */
+.diagram-container {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.diagram-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Math display */
+.math-inline {
+    vertical-align: middle;
+    height: 1.4em;
+    margin: 0 0.2em;
+    display: inline-block;
+}
+
+.math-display {
+    text-align: center;
+    margin: 2em 0;
+    overflow-x: auto;
+    padding: 1em;
+    background: rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+
+.math-display img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Selection */
+::selection {
+    background: #5a5040;
+    color: #e8e4da;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 1.5em 1.2em;
+        font-size: 18px;
+        border-left: none;
+        border-right: none;
+    }
+    
+    h1.chapter-title {
+        font-size: 1.5em;
+        margin: 2em 0 1em;
+    }
+    
+    h2.section-title {
+        font-size: 1.2em;
+    }
+    
+    h3.subsection-title {
+        font-size: 1.05em;
+    }
+    
+    #toc {
+        padding: 1.2em;
+    }
+    
+    blockquote {
+        margin: 1.2em 0;
+        padding: 0.5em 1em;
+    }
+}
 </style> 
 <style>
 @media print {
@@ -237,8 +369,8 @@ a:hover {
 #table-of-contents {
     border: none !important;
     box-shadow: none !important;
+    background: transparent !important;
 }
-
 </style>
 
 <style>
@@ -256,12 +388,64 @@ img[src*="1769400725287"] {
     height: auto !important;
 }
 
+/* Tables */
+table {
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+th, td {
+    padding: 0.7em 1em;
+    border: 1px solid #3a3835;
+    text-align: left;
+    color: #b8b4aa;
+}
+
+th {
+    background: #1e1d1b;
+    font-weight: 600;
+    color: #a8a49a;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+}
+
+/* Code/preformatted text */
+code, pre {
+    font-family: "Courier New", Courier, monospace;
+    background: #1a1918;
+    border-radius: 2px;
+    color: #a8a49a;
+}
+
+code {
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+}
+
+pre {
+    padding: 1em;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    border: 1px solid #3a3835;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    border-top: 1px solid #3a3835;
+    margin: 2.5em 0;
+}
 </style>
 </head>
-<body> <h1 style="text-align:center;font-size:3em;margin-bottom:0.5em;">±Theory</h1>
-
-<h2 style="text-align:center;font-weight:normal;font-style:italic;margin-top:0;">The Ultimate Generative Model</h2>
-<p style="text-align:center;font-size:1.2em;margin-top:2em;font-weight:normal;">Author: Arthur Nogman</p>
+<body>
+<!-- Title Page -->
+<div style="text-align: center; padding: 2.5em 0 3em; margin-bottom: 2em; border-bottom: 1px solid #3a3835;">
+    <h1 style="font-size: 2.8em; font-weight: normal; color: #d4d0c6; margin: 0 0 0.3em 0; letter-spacing: 0.1em;">±Theory</h1>
+    <h2 style="font-size: 1.2em; font-weight: normal; font-style: italic; color: #908c82; margin: 0;">The Ultimate Generative Model</h2>
+    <p style="font-size: 1em; color: #807c72; margin-top: 2.5em; text-align: center;">Author: Arthur Nogman</p>
+</div>
 
 <nav id="toc">
 <h2>Table of Contents</h2>
@@ -297,7 +481,6 @@ img[src*="1769400725287"] {
 <p>For this reason, readers are encouraged to use their personal LLM assistants to help digest the material, ask questions, and challenge the conclusions. The full text is provided in electronic form via a QR code in Appendix C.</p>
 
 <p>Let's make this practice explicit and ask some of the most well-known LLMs to provide a foreword for this book.</p>  <h1 class="chapter-title" id="preface">Preface</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> L</em>os Angeles, 2025. <p>Nothing dramatic is happening. The sun keeps shining.</p>
 
@@ -328,7 +511,6 @@ img[src*="1769400725287"] {
 <p>Both are necessary.</p> <em>The Ultimate Generative Model</em> is the first book in the ±Theory series. It offers an overview of a purely meaningless generative structure with the capacity to fully account for all observable phenomena—not as a sensational discovery, but as a solidification and systematization of current knowledge. With only one goal: to clearly and plainly show something that you already knew, or at least suspected—the loss of meaning has already happened. Everywhere. All at once. There is nowhere left to find it—and nothing left for it to constrain. <h2 class="section-title" id="section-what-theory-is-not">What ±Theory Is Not</h2>
 
 <strong>It is not science.</strong> <p>Science works with mathematics, logic, and measurement. What is presented here exists prior to those tools. These are pre-scientific and pre-mathematical constructs—describing not scientific results, but how science itself becomes possible.</p> <strong>It is not philosophy in the usual sense.</strong> <p>Unlike abstract speculation, the knowledge here is concrete and operational. It can be modeled, simulated, and eventually implemented on existing computer systems. The absence of formal mathematics is intentional: this framework operates at a level where formalisms have not yet emerged, while remaining grounded in a single generative axiom.</p> <strong>It is not a religion.</strong> <p>Religious metaphors appear throughout the book, but only as preserved knowledge patterns—structures that survived because they captured something real. No belief is promoted or disproved. Traditions ranging from Advaita and Buddhism to Judaism, Christianity, Kabbalah, and Islam naturally coexist here as different expressions of the same underlying structure.</p> <strong>Finally, it does not belong to any existing category of knowledge.</strong> <p>In a Nāgārjuna-like sense, it is defined by what it is <em>not</em>—not out of vagueness, but because naming comes after structure. That is enough to begin.</p> <h1 class="chapter-title" id="ch1">1. The Axiom</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> F</em>rom the Vedic yogis and the Buddha, all the way to Jesus and Mohammad, we see the same pattern. Each was involved in some form of direct experiential practice—withdrawal, silence, inward attention—from which knowledge was later articulated and passed on. <p>In Islam, this is rarely discussed in secular contexts, but every Muslim knows it: the Quran is the result of the Prophet's retreat and contemplation in the cave. Sufi traditions still use practices like <em>dhikr</em>, which mechanically are no different from meditation. I'm taking Mohammad and the Quran here as a corner case. You find similar practices among Christians, Kabbalists, shamans, and obviously in Hindu and Buddhist traditions.</p>
 
@@ -392,7 +574,6 @@ img[src*="1769400725287"] {
 <p>It is important to clarify the scope of the ±Theory at the outset. This framework does not dispute existing philosophical, scientific, or religious knowledge. Instead, it treats these bodies of knowledge as locally valid descriptions of the same underlying generative process, observed from different angles and at different levels of resolution.</p>
 
 <p>The aim is to systematize these perspectives under a single generative structure—referred to here as the <em>Tree of Knowledge</em>. The term echoes the biblical metaphor not as doctrine, but as structure: an early symbolic expression of how duality, awareness, and consequence arise together.</p> <h1 class="chapter-title" id="ch2">2. Genesis</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <h2 class="section-title" id="section-tree-of-life">"Tree of Life"</h2>
 
@@ -713,7 +894,6 @@ Duality → Awareness → Consciousness → Sentience
 <p>To answer that, we must move beyond computation alone—and examine how duality gives rise to ±Reality itself.</p>
 
 <p>That is where we turn next.</p> <h1 class="chapter-title" id="ch3">3. The Structure of Space</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> S</em>ome attentive readers may have already noticed a potential ambiguity. <p>Earlier, we spoke of a Tree of Life—a generative structure of possibilities—and a Tree of Knowledge, where stabilized concepts accumulate over time. These are not two separate trees.</p>
 
@@ -900,7 +1080,6 @@ Duality → Awareness → Consciousness → Sentience
 <p>This insight is not entirely new. Hints of it appeared from the very scientists who discovered quantum mechanics and its so-called "quirky" effects: superposition, entanglement, and wave–particle duality. Within the generative knowledge framework, these effects are not strange at all—they are expected.</p>
 
 <p>By this point, you may already intuitively see why these phenomena follow naturally from the model. For the rest, it will be a pleasure to examine them precisely in the chapters that follow.</p> <h1 class="chapter-title" id="ch4">4. Quantum Effects</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 <div style="background:#f5f5f5;border-left:4px solid #666;padding:1em;margin:2em 0;">
 <p style="margin:0 0 0.5em;font-weight:600;">Methodological Note</p>
 <p style="margin:0 0 0.5em;">This framework operates at a level prior to mathematical and physical formalization. It begins from a single generative axiom rather than from physical measurements or accepted mathematical primitives.</p>
@@ -1153,7 +1332,6 @@ U<sup>†</sup>U = I
 <p>Logic, computation, probability, and space all emerge from the same generative mechanism. Quantum computation simply operates closer to the root of that mechanism than classical computation ever could.</p>
 
 <p>Once again, quantum mechanics does not describe strange matter. It describes what reality looks like before it finishes becoming spatial.</p> <h1 class="chapter-title" id="ch5">5. Gravity as the Persistence of Stabilized Structure</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> A</em>t some point, stability has to appear. <p>A generative system that only branches, without selecting what remains coherent, collapses into noise. The Tree would grow indefinitely, but nothing would persist. There would be no memory, no objects, no continuity.</p>
 
@@ -1362,7 +1540,6 @@ U<sup>†</sup>U = I
 
 
 <h1 class="chapter-title" id="ch6">6. Bonus: Mathematics</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> W</em>e are approaching the final chapters of this book, and you may have noticed that something important seems to be missing. <p><p>That something is mathematics.</p></p>
 
@@ -1457,7 +1634,6 @@ S(x) := x∪{+}
 <p>It is the earliest—and most powerful—compression humanity achieved, long before we built machines to continue the process.</p>
 
 <p>Mathematics is not the root.</p> <em>It is the label set we introduced once the Tree grew too large to hold directly.</em> <h1 class="chapter-title" id="ch7">7. Bonus: Biology</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> E</em>volution is usually framed as random mutation followed by selection. This framing quietly suggests that variation emerges from an empty space—as if nature rolls dice without memory. <p>That assumption is misleading.</p>
 
@@ -1482,7 +1658,6 @@ S(x) := x∪{+}
 <p>The framework predicts that evolutionary novelty will preferentially arise through recombination and reuse of existing stabilized components, rather than through uniformly distributed mutation—a pattern already widely observed in evolutionary developmental biology.</p>
 
 <p>Biology, then, does not sit outside the framework.</p> <em>It is one of its clearest manifestations.</em> <h1 class="chapter-title" id="ch8">8. AI and the Next Fall</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <blockquote> <em>"Behold, the man has become like one of us, knowing good and evil. Now, lest he reach out his hand and take also from the tree of life, and eat, and live forever—"</em> — Genesis 3:22 </blockquote> <em> T</em>oward the end of this book, we deliberately return to Biblical metaphors. Not because they function as doctrine, but because they are among humanity's earliest symbolic compressions of deep structural insights. <p>Earlier chapters placed the Biblical Fall onto the rails of ±Theory: a transition from undifferentiated generative potential into constrained, self-referential knowledge. But as the framework has emphasized throughout, the process is recursive. What happened once can happen again—not as repetition, but as structural rhyme.</p>
 
@@ -1561,7 +1736,6 @@ S(x) := x∪{+}
 <p>There is one Tree, continuously branching—sometimes naturally, sometimes deliberately.</p>
 
 <p>We are not necessarily living inside a replica.</p> <em>We are living inside the process itself.</em> <h1 class="chapter-title" id="ch9">9. Final Thoughts</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> T</em>hroughout this book, we have treated ±Theory as a structural framework rather than a speculative philosophy. The natural question, then, is not whether it is meaningful, but whether it can be made operational. <p>The answer is yes.</p>
 
@@ -1620,7 +1794,6 @@ S(x) := x∪{+}
 <p>Whether implemented gradually or radically, the direction is clear.</p>
 
 <p>The Tree does not stop growing.</p> <em>What changes is whether its growth remains accidental—or becomes guided.</em> <h1 class="chapter-title" id="ch10">10. Epilogue</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <em> T</em>his book began with a simple claim: <em>no meaning exists.</em> <p>Not as a provocation, and not as a rejection of life, but as a structural observation. There is no hidden script, no built-in narrative, no cosmic intention quietly guiding events from behind the scenes. Meaning is not something reality carries by default. It is something the mind adds.</p>
 
@@ -1673,7 +1846,6 @@ S(x) := x∪{+}
 <p>Such a pattern does not disappear by rejection or force. Opposing it only reinforces its importance. The only way it loses influence is when it is no longer treated as exceptional—when it is seen as optional, local, and contingent, rather than universal and authoritative.</p>
 
 <p>This book is nothing more than a small step in that direction.</p> <h1 class="chapter-title" id="appendix-a">Appendix A</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <h2 class="section-title" id="section-how-theory-connects-to-world-traditions">How −Theory Connects to World Traditions</h2>
 
@@ -1968,7 +2140,6 @@ S(x) := x∪{+}
 <p>Because it's what's actually there.</p> 
 
 <h1 class="chapter-title" id="appendix-b">Appendix B: Derivation of Logic Prior to Space, Mark, and Topology</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <h2>Duality, Distinction, Structural NOT, and Logic Prior to Space</h2>
 
@@ -2301,7 +2472,6 @@ S(x) := x∪{+}
 
 
 <h1 class="chapter-title">Appendix C: Interactive Reading</h1>
-<p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
 
 <p style="text-align:center;margin:2em 0;">Scan the QR code to access the interactive digital version:</p>
 
