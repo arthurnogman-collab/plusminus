@@ -61,12 +61,11 @@
 
 <style>
 /* ══════════════════════════════════════════════════════════════
-   ±Theory — Post-Apocalyptic Archive
-   A recovered document from after the fall
+   ±Theory — Post-Apocalyptic Archive (Light)
    ══════════════════════════════════════════════════════════════ */
 
 html {
-    background: #1a1a1a;
+    background: #e8e5e0;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -81,28 +80,28 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 3em 5em;
-    color: #c8c4bc;
-    background: #232220;
+    color: #2a2825;
+    background: #f5f3f0;
     box-sizing: border-box;
-    border-left: 1px solid #3a3835;
-    border-right: 1px solid #3a3835;
+    border-left: 1px solid #d0cdc8;
+    border-right: 1px solid #d0cdc8;
 }
 
-/* Links - muted amber, like emergency lighting */
+/* Links - muted amber/brown */
 a {
-    color: #c9a857;
+    color: #8b6914;
     text-decoration: none;
 }
 
 a:hover {
-    color: #e0c068;
+    color: #6b5010;
     text-decoration: underline;
 }
 
 /* Table of Contents */
 #toc {
-    background: #1e1d1b;
-    border: 1px solid #3a3835;
+    background: #eceae6;
+    border: 1px solid #d0cdc8;
     border-radius: 2px;
     padding: 2em;
     margin: 2em 0 3em 0;
@@ -110,9 +109,9 @@ a:hover {
 
 #toc h2 {
     margin-top: 0;
-    color: #a8a49a;
+    color: #4a4540;
     font-size: 1.4em;
-    border-bottom: 1px solid #3a3835;
+    border-bottom: 1px solid #d0cdc8;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
     letter-spacing: 0.05em;
@@ -128,7 +127,7 @@ a:hover {
 #toc ul ul {
     padding-left: 1.5em;
     margin-top: 0.4em;
-    border-left: 1px solid #3a3835;
+    border-left: 1px solid #d0cdc8;
 }
 
 #toc li {
@@ -136,11 +135,11 @@ a:hover {
 }
 
 #toc a {
-    color: #908c82;
+    color: #5a5550;
 }
 
 #toc a:hover {
-    color: #c9a857;
+    color: #8b6914;
 }
 
 /* Scroll offset */
@@ -154,8 +153,8 @@ h1.chapter-title {
     text-align: center;
     margin: 3em 0 1.5em;
     font-weight: normal;
-    color: #d4d0c6;
-    border-bottom: 1px solid #3a3835;
+    color: #3a3530;
+    border-bottom: 1px solid #d0cdc8;
     padding-bottom: 0.5em;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -166,7 +165,7 @@ h2.section-title {
     font-size: 1.35em;
     margin: 2.5em 0 1em;
     font-weight: 600;
-    color: #b8b4aa;
+    color: #3a3530;
     letter-spacing: 0.03em;
 }
 
@@ -175,7 +174,7 @@ h3.subsection-title {
     font-size: 1.15em;
     margin: 2em 0 0.8em;
     font-weight: 600;
-    color: #a8a49a;
+    color: #4a4540;
 }
 
 /* Paragraphs */
@@ -194,14 +193,14 @@ li {
     margin: 0.5em 0;
 }
 
-/* Blockquotes - like rediscovered wisdom */
+/* Blockquotes */
 blockquote {
     font-style: italic;
     margin: 1.5em 0;
     padding: 0.8em 1.5em;
-    border-left: 2px solid #5a5650;
-    color: #9a968c;
-    background: rgba(0,0,0,0.15);
+    border-left: 2px solid #c0bdb8;
+    color: #5a5550;
+    background: rgba(0,0,0,0.03);
 }
 
 /* Diagrams and figures */
@@ -215,7 +214,6 @@ blockquote {
     height: auto;
     display: block;
     margin: 0 auto;
-    opacity: 0.9;
 }
 
 /* Math display */
@@ -231,7 +229,7 @@ blockquote {
     margin: 2em 0;
     overflow-x: auto;
     padding: 1em;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.02);
     border-radius: 2px;
 }
 
@@ -242,8 +240,8 @@ blockquote {
 
 /* Selection */
 ::selection {
-    background: #5a5040;
-    color: #e8e4da;
+    background: #d4cfc5;
+    color: #2a2825;
 }
 
 /* Mobile */
@@ -397,15 +395,15 @@ table {
 
 th, td {
     padding: 0.7em 1em;
-    border: 1px solid #3a3835;
+    border: 1px solid #d0cdc8;
     text-align: left;
-    color: #b8b4aa;
+    color: #3a3530;
 }
 
 th {
-    background: #1e1d1b;
+    background: #eceae6;
     font-weight: 600;
-    color: #a8a49a;
+    color: #4a4540;
     text-transform: uppercase;
     font-size: 0.85em;
     letter-spacing: 0.05em;
@@ -414,9 +412,9 @@ th {
 /* Code/preformatted text */
 code, pre {
     font-family: "Courier New", Courier, monospace;
-    background: #1a1918;
+    background: #eceae6;
     border-radius: 2px;
-    color: #a8a49a;
+    color: #4a4540;
 }
 
 code {
@@ -428,23 +426,23 @@ pre {
     padding: 1em;
     overflow-x: auto;
     margin: 1.5em 0;
-    border: 1px solid #3a3835;
+    border: 1px solid #d0cdc8;
 }
 
 /* Horizontal rules */
 hr {
     border: none;
-    border-top: 1px solid #3a3835;
+    border-top: 1px solid #d0cdc8;
     margin: 2.5em 0;
 }
 </style>
 </head>
 <body>
 <!-- Title Page -->
-<div style="text-align: center; padding: 2.5em 0 3em; margin-bottom: 2em; border-bottom: 1px solid #3a3835;">
-    <h1 style="font-size: 2.8em; font-weight: normal; color: #d4d0c6; margin: 0 0 0.3em 0; letter-spacing: 0.1em;">±Theory</h1>
-    <h2 style="font-size: 1.2em; font-weight: normal; font-style: italic; color: #908c82; margin: 0;">The Ultimate Generative Model</h2>
-    <p style="font-size: 1em; color: #807c72; margin-top: 2.5em; text-align: center;">Author: Arthur Nogman</p>
+<div style="text-align: center; padding: 2.5em 0 3em; margin-bottom: 2em; border-bottom: 1px solid #d0cdc8;">
+    <h1 style="font-size: 2.8em; font-weight: normal; color: #2a2825; margin: 0 0 0.3em 0; letter-spacing: 0.1em;">±Theory</h1>
+    <h2 style="font-size: 1.2em; font-weight: normal; font-style: italic; color: #5a5550; margin: 0;">The Ultimate Generative Model</h2>
+    <p style="font-size: 1em; color: #6a6560; margin-top: 2.5em; text-align: center;">Author: Arthur Nogman</p>
 </div>
 
 <nav id="toc">
