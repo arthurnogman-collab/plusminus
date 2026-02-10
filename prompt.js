@@ -55,7 +55,7 @@ The Ultimate Generative Model restructures how reality is understood, without sm
 
 This book is intentionally condensed and should be treated as a source of knowledge rather than an exercise in narration. Everyone is unique in how they understand the world within their own knowledge framework. Mathematicians see structure where poets see meaning; physicists see mechanism where contemplatives see process. Given this reality, no single narration can serve all readers equally.
 
-For this reason, readers are encouraged to use their personal LLM assistants to help digest the material, ask questions, and challenge the conclusions. The full text is provided in electronic form via a QR code in Appendix D.
+For this reason, readers are encouraged to use their personal LLM assistants to help digest the material, ask questions, and challenge the conclusions. The full text is provided in electronic form via a QR code in Appendix E.
 
 
 ========================================
@@ -1396,9 +1396,11 @@ Stabilization is therefore not optional.
 
 It is the condition for anything recognizable to exist.
 
-In this framework, gravity is not introduced as a force and not added to space.
+The Tree of Knowledge already has a built-in bias toward simpler, root-proximate patterns — this follows directly from the description-length growth principle established earlier. Patterns that stabilize first are already embedded in the tree before later patterns form. Later patterns must grow on top of what is already there — they extend from existing structure and are therefore constrained by it. Gravity is not introduced as a separate force. It is what this already-established structural inheritance looks like when projected into space.
 
-It is the generative mechanism by which deeply stabilized patterns preserve themselves as the Tree continues to grow.
+Furthermore, once stabilized patterns exist in a spatial projection, their influence must propagate locally. Recall that spatial distance is tree distance: in the octree structure, nodes that share more parent nodes are closer in space. Propagation between spatially adjacent regions is propagation between structurally adjacent branches. Nonlocal influence would mean jumping across the tree without traversing intermediate structure — which contradicts how the octree defines distance in the first place. And among all possible local propagation rules, diffusion is the simplest: each region inherits coherence from its neighbors. Any rule simpler than diffusion would fail to propagate at all; any rule more complex would introduce structure not yet available at this level. Diffusion is therefore not chosen but forced — it is the lowest-complexity coherence-preserving rule available once space has emerged.
+
+Gravity, in this framework, is not an addition to the theory. It is something one would have to actively suppress to avoid. Given the Tree's bias toward root-proximate patterns, given the necessity of local propagation after spatial projection, and given diffusion as the simplest available rule, gravitational attraction is an inevitable consequence — not a hypothesis.
 
 Just as quantum phenomena describe internally coherent structure whose spatial projection has not yet stabilized, gravity describes the behavior of structure after spatial stabilization has become dominant and asymmetric.
 
@@ -2234,7 +2236,174 @@ This book is nothing more than a small step in that direction.
 
 
 ========================================
-APPENDIX A: CONVERGENCE
+APPENDIX A: ONENESS, EMPTINESS, AND EVERYTHINGNESS
+========================================
+
+
+## A.0 Before Duality
+
+
+Throughout this book, duality is treated as the minimal axiom. Nothing precedes it in the formal structure. But something is prior to it in logic - not as a more fundamental axiom, but as the condition that makes duality both possible and inevitable.
+
+That condition is oneness.
+
+Not oneness as a religious claim or a mystical experience, but oneness as the simplest possible description of unconstrained totality: infinite potential, extending across every conceivable dimension, without boundary, without preference, without form.
+
+This appendix examines what oneness actually entails when taken seriously - and why duality is not an arbitrary starting point but the only possible first expression of an infinite whole.
+
+
+## A.1 Everythingness Is Emptiness
+
+
+Imagine a space of infinite dimensionality containing every possible vector.
+
+For every vector v in this space, there exists, by the symmetry of completeness, a vector -v: identical in magnitude, opposite in direction. This is not an assumption. It is a direct consequence of the space containing all possibilities. If any vector were missing its counterpart, the space would not be complete.
+
+Now consider the sum of all vectors in this space.
+
+Every vector pairs with its negation. Each pair sums to zero. The total - the sum of everything - is the zero vector.
+
+This is not wordplay. It is the most elementary consequence of symmetric completeness in linear algebra. A space that contains all possibilities, taken as a whole, cancels itself into nothing.
+
+The same structure applies beyond vectors. Consider every possible wave across every possible frequency and phase. For each wave, the complete space contains its exact inverse. Summed, they annihilate into silence. Consider every possible statement. For each, its negation exists with equal standing. Taken together, they assert nothing.
+
+Everythingness, when totaled, is emptiness.
+
+Not approximately. Not poetically. Structurally.
+
+This is the first result: the set of all possibilities, taken without restriction, is indistinguishable from the absence of all structure. Infinite fullness and infinite emptiness are not opposites. They are identical - two descriptions of the same condition.
+
+
+## A.2 The Nature of Infinite Potential
+
+
+What remains when everything cancels?
+
+Not nothing in the colloquial sense. What remains is potential - pure, unconstrained, and infinite. Every possibility is still present. None has been removed. The cancellation is not destruction; it is balance. The vectors have not disappeared. They coexist in perfect equilibrium. The whole is zero not because it lacks content, but because its content is perfectly symmetric.
+
+This is oneness.
+
+Not a thing. Not an entity. Not a being with preferences. Not a mind that plans. Infinite potential in infinite dimensions, resting in perfect self-cancellation.
+
+It is simultaneously everything and nothing. It is boundless, formless, and wholly without structure. It cannot be observed, because observation requires distinction. It cannot be described, because description requires categories. It cannot even be located, because location requires space - and space has not yet emerged.
+
+This is the condition that all mystical traditions point toward and none can articulate - because articulation is already a departure from it.
+
+
+## A.3 A Note on the Nature of God
+
+
+Many religious traditions describe God as infinite, omnipotent, and unbounded - and then immediately constrain this infinity with humanly comprehensible moral attributes: God is good, God is just, God is merciful.
+
+If God is truly infinite - infinite in power, scope, dimensionality, and potential - then God cannot simultaneously be bounded by any finite attribute, including goodness, justice, or mercy as humans understand them. These are deeply nested, highly compressed concepts that emerge far down the Tree of Knowledge. Assigning them to the infinite is like assigning a color to mathematics. The categories do not apply at that level.
+
+This is not an argument against religion or against the existence of something ultimate. What this framework calls oneness - infinite potential in perfect self-cancellation - is, if anything, closer to the genuine meaning of "God" than any moral or personal characterization could be. It is truly boundless. It is truly incomprehensible. It is the source of all structure without being any particular structure.
+
+The traditions were not wrong to sense infinity at the root of existence. The error, where it occurred, was in making infinity comfortable - in reducing it to a very large version of a human judge.
+
+The actual infinite is not comforting or discomforting. It is not moral or immoral. It simply is - everything and nothing, simultaneously and without contradiction.
+
+
+## A.4 Why Duality Is Inevitable
+
+
+If oneness is infinite potential in perfect balance, the natural question is: why does anything happen at all? Why doesn't it simply remain as undifferentiated zero forever?
+
+The answer is contained in the very mechanism of cancellation.
+
+We established that oneness contains all possible vectors, and that for every vector there exists its counterpart. This symmetry - the property that every element is paired with its opposite - is what produces the cancellation to zero. It is also what makes the space uniform.
+
+But uniformity is now a describable property of oneness.
+
+And the same symmetry that guarantees uniformity simultaneously guarantees its opposite: non-uniformity. Distinction. If the space truly contains all possibilities and for every property its counterpart, then the moment uniformity can be identified, the space must also contain what is not uniform.
+
+The cancellation that makes everything equal nothing is the same structural feature that forces distinction to appear. They are inseparable - two readings of the same symmetry principle. You cannot have the one without the other.
+
+This is not a flaw or a paradox. It is the deepest property of oneness: the very mechanism by which infinite potential rests in perfect balance is identical to the mechanism by which distinction becomes inevitable.
+
+There is a still tighter way to see this. Consider all distinguishable possibilities within oneness. Every one of them already has the property of duality, because to distinguish anything is already to invoke this-versus-that. Duality therefore covers all distinguishable content. The only thing remaining that is not covered by duality is uniformity - the undistinguished whole. But now we have two things: uniformity and distinction. And that pair is itself a duality. Uniformity cannot exist as a separate category without producing the very thing it was supposed to be free of.
+
+Oneness does not sit outside duality as some mysterious prior realm. Oneness is dual by its own nature - it contains uniformity and distinction as its own internal structure. Duality does not emerge from oneness like a child from a parent. It is already there as oneness's own self-description. There is no remainder. Duality is total.
+
+This also resolves a potential concern about infinite regress. Oneness as defined here is not an entity or a cause that requires its own explanation. It is the absence of all structure - the zero that results from symmetric completeness. One cannot ask "what created the absence of all structure?" because absence is not a thing that needs creating. It is the default. Unlike a God, a singularity, or a simulator - each of which is something specific that demands further accounting - oneness is nothing specific. It is the condition that obtains when no restrictions apply.
+
+Now, among all possible forms of distinction, duality occupies a unique position. It is the minimal case - the simplest possible distinction: this and not-this, + and -. Every higher-order distinction - three-way, four-way, n-ary - is decomposable into sequences of binary distinctions. Duality is not one distinction among many. It is the primitive from which all others can be constructed.
+
+Duality is therefore not chosen, not imposed, and not arbitrary. It is the minimal and irreducible form of the distinction that oneness, by its own symmetry, cannot fail to produce.
+
+This is why E = \E^+, E^-\ is not merely a convenient axiom. It is the inevitable first expression of infinite potential.
+
+
+## A.5 From Potential to Actuality
+
+
+Once duality appears within oneness, something irreversible begins.
+
+Oneness is infinite potential. Duality is a constraint - the simplest possible constraint: that there is this and that. But when infinite potential encounters any constraint, it does what infinite potential does: it exhausts every configuration compatible with that constraint.
+
+This is not a metaphor for computation.
+
+It is the most literal description available.
+
+Every possible arrangement of + and - is explored. Every relation that can form, forms. Every structure that can stabilize, stabilizes. The infinite engine of oneness, which previously canceled itself into silence, now has a channel - a single structural opening - and it pours through.
+
+Duality does not create a small set of possibilities. It unlocks the entirety of oneness, now filtered through the simplest possible lens. What was undifferentiated potential becomes differentiated actuality. What was everything-and-nothing becomes an ever-growing structure of realized distinctions.
+
+This is the process described throughout this book as the Tree of Knowledge.
+
+The Tree is not separate from oneness. It is oneness expressing itself through the only channel available: recursive duality. Each new distinction is a further articulation of the infinite. Each stabilized pattern is a region of potential that has become actual.
+
+And the process does not terminate - because the potential is infinite, and duality, once present, continues to apply to its own products without limit.
+
+Reality, in this view, is not a thing that exists.
+
+Reality is the ongoing conversion of infinite potential into structured actuality through the recursive application of the simplest possible constraint.
+
+
+## A.6 Emptiness, Everythingness, and Energy
+
+
+The letter E in the axiom E = \E^+, E^-\ is not an accidental label.
+
+It can be read as emptiness - because the structure, at every level, is empty of inherent existence. Nothing in the tree is self-grounding. Everything arises through relation.
+
+It can be read as everythingness - because the generative process, given infinite potential and recursive duality, produces every possible structure without limit.
+
+It can be read as energy - because what the framework describes is not a static catalogue of forms but a dynamic process. The unfolding is not contemplative. It is active. Potential converting to actuality is the most fundamental description of what energy means, stripped of physical units and measurement conventions.
+
+These three readings do not compete.
+
+They describe the same process from three angles:
+
+From the angle of content - emptiness. Nothing has substance independent of its relations.
+
+From the angle of scope - everythingness. The process generates without bound.
+
+From the angle of dynamics - energy. The conversion from potential to actuality is the engine of reality.
+
+This triple identity - emptiness, everythingness, energy - is not a philosophical conceit. It is the structural signature of a process that begins with infinite self-canceling potential and unfolds through recursive duality into the reality we observe, inhabit, and are.
+
+
+## A.7 Summary
+
+
+Oneness is infinite potential across infinite dimensions - simultaneously everything and nothing, because symmetric completeness cancels to zero.
+
+This oneness is not a substance, not a deity, not a metaphysical backdrop. It is the condition of unconstrained totality.
+
+Within this totality, duality is the unique possibility that does not cancel - because the negation of distinction is uniformity, and uniformity is already oneness. Duality therefore emerges inevitably, not by choice or accident.
+
+Once duality appears, infinite potential meets a finite constraint. The result is exhaustive exploration: every configuration, every relation, every structure that duality permits is generated, stabilized, and extended.
+
+This is reality.
+
+Not a simulation of something else. Not a container for objects. Not a stage on which events occur.
+
+Reality is the active, ongoing, recursive process by which infinite potential becomes structured actuality - one distinction at a time, without end.
+
+
+========================================
+APPENDIX B: CONVERGENCE
 ========================================
 
 
@@ -2255,10 +2424,10 @@ What Ngrjuna expressed philosophically, expresses formally and computationally: 
 This appendix demonstrates that major philosophical and spiritual traditions - when examined structurally - describe the same recursive process. Not because they borrowed from each other, but because they investigated the same reality deeply enough to encounter its actual structure.
 
 
-## A.1 Buddhist Traditions
+## B.1 Buddhist Traditions
 
 
-### A.1.1 Ngrjuna's Madhyamaka
+### B.1.1 Ngrjuna's Madhyamaka
 
 
 Ngrjuna (c. 150-250 CE) founded the Madhyamaka (Middle Way) school of Buddhist philosophy in India. His Mlamadhyamakakrik proves that nothing exists independently.
@@ -2321,7 +2490,7 @@ Ngrjuna proved through logic alone: reality is not made of things but of relatio
 Answer: E = \E^+, E^-\, recursively applied.
 
 
-### A.1.2 Dzogchen and Zen
+### B.1.2 Dzogchen and Zen
 
 
 Dzogchen (Tibetan Buddhism):
@@ -2350,7 +2519,7 @@ No-Mind (Mushin): Not absence of thought but absence of reification. Thoughts ar
 Sudden Enlightenment (Satori): Instant recognition. Like realizing you've been wearing your glasses while searching for them. What you sought was never absent.
 
 
-### A.1.3 Buddha, Nirvana, and the Bodhisattva Orientation
+### B.1.3 Buddha, Nirvana, and the Bodhisattva Orientation
 
 
 Buddha in terms is full non-separation. The illusion of a localized, independent self collapses, and what remains is the recursive structure recognizing itself - the tree aware of its own recursion. Identity is no longer coupled to any particular spatial projection or narrative position.
@@ -2366,10 +2535,10 @@ Analogy: Imagine the entire world is a single body - your body. You injure your 
 In terms: Buddha is non-separation, Nirvana is clear seeing, and the Bodhisattva orientation is the deliberate continuation of spatial projection after realization.
 
 
-## A.2 Hindu Traditions
+## B.2 Hindu Traditions
 
 
-### A.2.1 Advaita Vedanta
+### B.2.1 Advaita Vedanta
 
 
 Advaita Vedanta ("non-dual end of knowledge"), systematized by Adi Shankaracharya (8th century CE): ultimate reality (Brahman) and individual self (Atman) are identical.
@@ -2401,10 +2570,10 @@ Mapping:
 [TABLE]
 
 
-## A.3 Kabbalistic Mysticism
+## B.3 Kabbalistic Mysticism
 
 
-### A.3.1 The Tree Structure
+### B.3.1 The Tree Structure
 
 
 Kabbalah emerged in medieval Spain (12th-13th centuries). Unlike other mystical traditions using metaphor, Kabbalah explicitly describes reality using tree as central organizing principle.
@@ -2438,10 +2607,10 @@ Mapping:
  vindicates their insight: reality is tree-structured because recursive duality generates binary tree. Kabbalah discovered this computationally; we now derive it formally.
 
 
-## A.4 Western Psychology
+## B.4 Western Psychology
 
 
-### A.4.1 Jung and Freud
+### B.4.1 Jung and Freud
 
 
 Carl Jung - Archetypes:
@@ -2468,10 +2637,10 @@ Unconscious = constraint structures operating without coupling to awareness.
 Your "self" is tiny portion of total constraint structure. Most operates below coupling threshold to conscious projection.
 
 
-## A.5 Western Philosophy
+## B.5 Western Philosophy
 
 
-### A.5.1 Spinoza - Substance Monism
+### B.5.1 Spinoza - Substance Monism
 
 
 Baruch Spinoza (17th century Netherlands) proposed radical monism: only one substance exists, which he called "God or Nature" (Deus sive Natura). Everything else - individual things, minds, bodies - are temporary modifications (modes) of this single substance.
@@ -2495,7 +2664,7 @@ Spinoza intuited what formalizes: no independent entities exist - only single se
 He lacked formal mechanism but saw the structure clearly: reality is one, appearing as many.
 
 
-### A.5.2 Whitehead - Process Philosophy
+### B.5.2 Whitehead - Process Philosophy
 
 
 Alfred North Whitehead (20th century) rejected substance metaphysics entirely, proposing "process philosophy": reality is not made of enduring things but of momentary events (actual occasions) that immediately perish.
@@ -2525,10 +2694,10 @@ Whitehead saw what proves: reality is process, not substance. His "actual occasi
 He came closest among Western philosophers to seeing the structure as it actually is: ongoing process with no static ground.
 
 
-## A.6 Modern Precursors
+## B.6 Modern Precursors
 
 
-### A.6.1 Spencer-Brown - Laws of Form
+### B.6.1 Spencer-Brown - Laws of Form
 
 
 G. Spencer-Brown's Laws of Form (1969) attempted to derive logic and mathematics from single primitive: the Mark - an act of distinction.
@@ -2553,7 +2722,7 @@ These constitute additional structure beyond the Mark itself. Boolean logic gets
 Spencer-Brown's framework is syntactic (manipulation of symbols). is generative (structure produces operations).
 
 
-### A.6.2 Wheeler - It from Bit
+### B.6.2 Wheeler - It from Bit
 
 
 John Archibald Wheeler (20th century physicist) proposed "It from Bit" - physical reality ("it") emerges from information ("bit").
@@ -2639,7 +2808,7 @@ Because it's what's actually there.
 
 
 ========================================
-APPENDIX B: PHILOSOPHICAL IMPLICATIONS
+APPENDIX C: PHILOSOPHICAL IMPLICATIONS
 ========================================
 
 
@@ -2657,10 +2826,10 @@ The tone shifts too. The technical chapters were rigorous and formal. This appen
 Take what resonates. Question what doesn't. The structure is what it is - how you relate to it is yours to discover.
 
 
-## B.1 Pattern Integration and Conscious Reality
+## C.1 Pattern Integration and Conscious Reality
 
 
-### B.1.1 Pattern Integration as Practical Magic
+### C.1.1 Pattern Integration as Practical Magic
 
 
 Spelling - as in casting spells - is integrating ideas.
@@ -2688,7 +2857,7 @@ Traditional cultures called deliberate pattern integration "magic" or "ritual" -
 The underlying process is identical. Only the vocabulary changes.
 
 
-### B.1.2 Historical Shifts in Conscious Reality
+### C.1.2 Historical Shifts in Conscious Reality
 
 
 Reality has changed throughout human history. Not just beliefs - actual experienced reality.
@@ -2710,7 +2879,7 @@ A materialist operating within scientific constraint structure experiences the s
 Both are real as projections arising from the same underlying recursive process, though they differ significantly in stability, intersubjective consistency, and predictive reliability.
 
 
-### B.1.3 Everyday Pattern Manifestation
+### C.1.3 Everyday Pattern Manifestation
 
 
 Look around right now. Actually look at your surroundings.
@@ -2725,15 +2894,11 @@ Most of what you see is some constraint pattern manifested through spatial proje
  - Your sense of being "you": Recursive self-referential pattern maintaining coherence
 
 
-The causal chain - how patterns in the tree structure manifest as spatial projections - remains poorly understood. We observe it happening continuously but lack systematic knowledge of the mechanisms.
 
-Understanding the underlying structure more explicitly expands the possibility space for deliberate intervention. Not unlimited - the structure still constrains what can occur - but a larger space of accessible states than naive interaction allows.
-
-
-## B.2 Death and Pattern Continuity
+## C.2 Death and Pattern Continuity
 
 
-### B.2.1 Death as De-Projection
+### C.2.1 Death as De-Projection
 
 
 What actually happens when you die?
@@ -2753,7 +2918,7 @@ Consciousness is analogous: a constraint pattern temporarily instantiated throug
 The specific forms of post-projection dynamics remain undetermined. Pattern annihilation is impossible (there is no mechanism for it). Pattern continuation is guaranteed (structural necessity). Where the pattern goes, and how it continues, the framework does not determine.
 
 
-### B.2.2 What We Don't Know
+### C.2.2 What We Don't Know
 
 
 Here lies the critical boundary: the framework constrains what cannot occur, but it does not predict specific outcomes.
@@ -2787,7 +2952,7 @@ The pattern may redistribute entirely through influence on other patterns - pers
 This form of continuation is certainly occurring. Whether it is the only form, or one among several, the framework does not determine.
 
 
-### B.2.3 What This Means Practically
+### C.2.3 What This Means Practically
 
 
 Key point: continuity does not require substance.
@@ -2808,10 +2973,10 @@ Death ends a particular projection, not the pattern itself.
 This is not belief or consolation; it is structural description. Pattern annihilation is impossible within the framework. Pattern transformation is guaranteed. The specific form that transformation takes remains undetermined.
 
 
-## B.3 Free Will and Ethical Implications
+## C.3 Free Will and Ethical Implications
 
 
-### B.4.1 Free Will as Structural Participation
+### C.4.1 Free Will as Structural Participation
 
 
 From a hypothetical omniscient perspective (which doesn't actually exist), constraint propagation is deterministic. All patterns follow from E = \E^+, E^-\ through recursive resolution.
@@ -2842,7 +3007,7 @@ If choices didn't follow from who you are, they'd be random, not free.
 The alternative to choices following from character isn't freedom - it's chaos.
 
 
-### B.4.2 Ethics as Emergent Constraint Structure
+### C.4.2 Ethics as Emergent Constraint Structure
 
 
 The framework itself is ethically neutral. It derives structure, not values.
@@ -2907,14 +3072,14 @@ You stop mistaking projections for ultimate reality. You recognize patterns (inc
 
 
 ========================================
-APPENDIX C: DERIVATION OF LOGIC PRIOR TO SPACE, MARK, AND TOPOLOGY
+APPENDIX D: DERIVATION OF LOGIC PRIOR TO SPACE, MARK, AND TOPOLOGY
 ========================================
 
 
 ## Duality, Distinction, Structural NOT, and Logic Prior to Space
 
 
-### C.0 Purpose and Scope
+### D.0 Purpose and Scope
 
 
 This appendix provides a rigorous derivation of Boolean logic from the most minimal admissible starting point.
@@ -2949,7 +3114,7 @@ Nothing in this appendix assumes:
 Only duality itself is allowed.
 
 
-### C.1 The Phenomenological Constraint: Duality
+### D.1 The Phenomenological Constraint: Duality
 
 
 In the Kacc\=anagotta Sutta, Gautama Buddha makes a precise structural observation:
@@ -2977,7 +3142,7 @@ It is used as a phenomenological constraint:
 Any framework claiming to describe reality prior to conceptual construction must begin with a dual structure, and nothing more.
 
 
-### C.2 Formalizing the Minimal Primitive
+### D.2 Formalizing the Minimal Primitive
 
 
 To formalize this constraint without importing additional assumptions, we introduce the minimal structure capable of expressing "depends on a duality":
@@ -2999,7 +3164,7 @@ This definition is intentionally strict:
 This formalizes "existence / non-existence" as complementary poles of a single primitive, not as independent claims about reality.
 
 
-### C.3 First Division: Distinction and NOT Are Identical
+### D.3 First Division: Distinction and NOT Are Identical
 
 
 At the first division of duality, distinction and negation are not separate operations.
@@ -3040,7 +3205,7 @@ Only after recursion introduces multiple positions (depth 2) do these notions di
 This point is critical for what follows.
 
 
-### C.4 Recursion Is Forced
+### D.4 Recursion Is Forced
 
 
 Once duality exists, there is only one way it can relate to itself.
@@ -3061,7 +3226,7 @@ Using the alphabet \+, -\:
 The recursive binary tree is not assumed - it is forced by duality.
 
 
-### C.5 Structural Mirroring and NOT at All Depths
+### D.5 Structural Mirroring and NOT at All Depths
 
 
 Consider the complete set of binary strings at any depth, ordered lexicographically.
@@ -3100,7 +3265,7 @@ At depth 1, NOT coincides with distinction.
 At higher depths, NOT persists as a structural involution acting on sequences.
 
 
-### C.6 The Minimal Logical World: Depth 2
+### D.6 The Minimal Logical World: Depth 2
 
 
 Logic appears as soon as relations between relations become possible.
@@ -3127,10 +3292,10 @@ No logical axioms are assumed.
 Logic appears as classification over a finite state space.
 
 
-### C.7 Forced Partitions and Refinements
+### D.7 Forced Partitions and Refinements
 
 
-#### C.7.1 Sameness and Difference
+#### D.7.1 Sameness and Difference
 
 
 Given two symbols x, y, there is one unavoidable distinction:
@@ -3143,7 +3308,7 @@ Given two symbols x, y, there is one unavoidable distinction:
 These partitions are structurally forced.
 
 
-#### C.7.2 Difference Order
+#### D.7.2 Difference Order
 
 
 Within difference, the only remaining distinction is order:
@@ -3160,7 +3325,7 @@ x y is false only on +-
 Directionality and conditionality require no additional assumptions.
 
 
-#### C.7.3 Sameness AND or NOR
+#### D.7.3 Sameness AND or NOR
 
 
 Within sameness, the only possible refinement is which sameness is privileged:
@@ -3173,7 +3338,7 @@ Within sameness, the only possible refinement is which sameness is privileged:
 NAND and OR follow immediately via structural NOT.
 
 
-### C.8 Relation to Spencer-Brown
+### D.8 Relation to Spencer-Brown
 
 
 In Laws of Form, George Spencer-Brown identified a crucial insight:
@@ -3216,7 +3381,7 @@ Spencer-Brown correctly identified the first division.
 This framework continues the structure without introducing anything else.
 
 
-### C.9 Buddhism and Structural Duality
+### D.9 Buddhism and Structural Duality
 
 
 The Buddha's statement in the Kacc\=anagotta Sutta is not metaphysical speculation.
@@ -3238,7 +3403,7 @@ This corresponds directly to the structure:
 What Buddhism describes phenomenologically, this framework describes generatively.
 
 
-### C.10 Summary
+### D.10 Summary
 
 
  - Duality is the minimal admissible starting point
@@ -3269,13 +3434,11 @@ This principle is implicit in logic and cellular automaton theory but has not be
 
 
 ========================================
-APPENDIX D: INTERACTIVE READING
+APPENDIX E: INTERACTIVE READING
 ========================================
 
 
-The complete text of this book is provided in electronic form. Readers are encouraged to use this version for interactive exploration, including analysis with language models or other tools.
-
-`;
+The complete text of this book is provided in electronic form. Readers are encouraged to use this version for interactive exploration, including analysis with language models or other tools.`;
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
