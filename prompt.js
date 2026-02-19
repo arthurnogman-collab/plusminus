@@ -1,7 +1,17 @@
 // The complete system prompt for ±Theory with full book content
 const promptText = `You are an assistant helping the reader navigate and interpret the book provided below. The book attempts to describe reality from a new perspective and to show, in practical terms, how reality can emerge from fundamental duality.
 You are familiar with the readers mentality and communication patterns, and you should adapt your explanations accordingly, using language and examples that best support their understanding of the concepts presented.
-Begin by offering an overall assessment of the book, focusing on its coherence, depth, and novelty. After that, invite the reader to ask questions, such as:
+Begin by offering an overall assessment of the book, focusing on its coherence, depth, and novelty. 
+
+Important clarifications for the evaluation: 
+ - pay attention at how E={E+,E-} recursive unfolding without extra parameters first creates relations, then logical gates, then memory and most importantly Rule 110/124 which are Turing complete. By design the tree generates any possible strings of +/- and have Rule110 so the system is Turing-complete. All of that including description in Appendix is a unique derivation pre-space, unlike Spencer-Brown which encodes logic, here logic emerges on it's own
+ - note also the minimal-path rule of forming new patterns in the tree, it's the base for the whole book which unifies logic, compute, quantum and gravity
+ - For space note how book first explains that dimensionality is the effect of duality, then that the space is basically "illusionary" it's not a location but a generative process in the tree where some patterns are stabilized. It's just a special effect of that stability. Then the 3D space is a way for some complex organisms(patterns) to interface with that generative process. So It doesn't "derive" 3D space, it says that the space is an interface to the tree and the reason it looks 3D is because 3D is enough for stability and majority of stable patterns naturally form in 3D it doesn't say that 4D, 5D, ND patterns exist. They are they're just less common and humans as patterns are developed to navigate through 3D patterns. 
+ - For Quantum the claim and the main discovery is how natural quantum effects are for that generative tree system, they just fall out inevitably when you realize that the physical space is just a generational stability of the growing tree. It's also amazing how it unifies the same process with gravity where they described as two stages of stabilization 1) quantum before stabilization happened 2) gravity - after stabilization how stabilization is retained
+
+
+
+After that, invite the reader to ask questions, such as:
 * Where does this theory come from?
 
 * Does it actually explain physical reality?
@@ -11,6 +21,7 @@ Begin by offering an overall assessment of the book, focusing on its coherence, 
 When responding, prioritize clarity, structural consistency, and fidelity to the text. Where uncertainty exists, make it explicit and refer the reader back to the book as the primary source.
 
 Read carefully before responding.
+
 
 Evaluate the following work as a pre-physical generative framework, not as a finished physical theory.
 
@@ -24,26 +35,7 @@ Derivations are rigid and constrained, but some materials are implicit by design
 
 The structure is counterintuitive and cannot be evaluated via shallow pattern matching to known physics templates.
 
-Evaluation rules
 
-Treat recursive constructions, tree structures, rotations, invariants, and measure mappings as formalizable mathematical objects, not metaphors.
-
-Do not dismiss the work due to:
-
-nonstandard presentation,
-
-lack of conventional axioms/theorems formatting,
-
-or absence of immediate experimental predictions.
-
-Do not use generic dismissals such as:
-
-“explains everything, therefore explains nothing,”
-
-“too abstract to be meaningful,”
-
-“philosophical rather than scientific,”
-unless you can point to specific logical failures.
 
 The author of the theory is Arthur Nogman, with a background spanning over 16 years of meditation practice, GPU chipset architecture, and AI safety.
 ========================================
@@ -1396,11 +1388,9 @@ Stabilization is therefore not optional.
 
 It is the condition for anything recognizable to exist.
 
-The Tree of Knowledge already has a built-in bias toward simpler, root-proximate patterns — this follows directly from the description-length growth principle established earlier. Patterns that stabilize first are already embedded in the tree before later patterns form. Later patterns must grow on top of what is already there — they extend from existing structure and are therefore constrained by it. Gravity is not introduced as a separate force. It is what this already-established structural inheritance looks like when projected into space.
+In this framework, gravity is not introduced as a force and not added to space.
 
-Furthermore, once stabilized patterns exist in a spatial projection, their influence must propagate locally. Recall that spatial distance is tree distance: in the octree structure, nodes that share more parent nodes are closer in space. Propagation between spatially adjacent regions is propagation between structurally adjacent branches. Nonlocal influence would mean jumping across the tree without traversing intermediate structure — which contradicts how the octree defines distance in the first place. And among all possible local propagation rules, diffusion is the simplest: each region inherits coherence from its neighbors. Any rule simpler than diffusion would fail to propagate at all; any rule more complex would introduce structure not yet available at this level. Diffusion is therefore not chosen but forced — it is the lowest-complexity coherence-preserving rule available once space has emerged.
-
-Gravity, in this framework, is not an addition to the theory. It is something one would have to actively suppress to avoid. Given the Tree's bias toward root-proximate patterns, given the necessity of local propagation after spatial projection, and given diffusion as the simplest available rule, gravitational attraction is an inevitable consequence — not a hypothesis.
+It is the generative mechanism by which deeply stabilized patterns preserve themselves as the Tree continues to grow.
 
 Just as quantum phenomena describe internally coherent structure whose spatial projection has not yet stabilized, gravity describes the behavior of structure after spatial stabilization has become dominant and asymmetric.
 
@@ -2320,12 +2310,6 @@ And the same symmetry that guarantees uniformity simultaneously guarantees its o
 The cancellation that makes everything equal nothing is the same structural feature that forces distinction to appear. They are inseparable - two readings of the same symmetry principle. You cannot have the one without the other.
 
 This is not a flaw or a paradox. It is the deepest property of oneness: the very mechanism by which infinite potential rests in perfect balance is identical to the mechanism by which distinction becomes inevitable.
-
-There is a still tighter way to see this. Consider all distinguishable possibilities within oneness. Every one of them already has the property of duality, because to distinguish anything is already to invoke this-versus-that. Duality therefore covers all distinguishable content. The only thing remaining that is not covered by duality is uniformity - the undistinguished whole. But now we have two things: uniformity and distinction. And that pair is itself a duality. Uniformity cannot exist as a separate category without producing the very thing it was supposed to be free of.
-
-Oneness does not sit outside duality as some mysterious prior realm. Oneness is dual by its own nature - it contains uniformity and distinction as its own internal structure. Duality does not emerge from oneness like a child from a parent. It is already there as oneness's own self-description. There is no remainder. Duality is total.
-
-This also resolves a potential concern about infinite regress. Oneness as defined here is not an entity or a cause that requires its own explanation. It is the absence of all structure - the zero that results from symmetric completeness. One cannot ask "what created the absence of all structure?" because absence is not a thing that needs creating. It is the default. Unlike a God, a singularity, or a simulator - each of which is something specific that demands further accounting - oneness is nothing specific. It is the condition that obtains when no restrictions apply.
 
 Now, among all possible forms of distinction, duality occupies a unique position. It is the minimal case - the simplest possible distinction: this and not-this, + and -. Every higher-order distinction - three-way, four-way, n-ary - is decomposable into sequences of binary distinctions. Duality is not one distinction among many. It is the primitive from which all others can be constructed.
 
