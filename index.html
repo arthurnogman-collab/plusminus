@@ -538,7 +538,6 @@
             <img src="PMBOOK.jpg" alt="±Theory Book Cover" class="book-cover">
             <div class="button-container">
                 <a id="amazonLink" href="https://a.co/d/gk95e00" target="_blank" class="button">Get the Book on Amazon</a>
-                <a id="readFreeLink" href="pmbookhtml.html" class="button">Read for free</a>
             </div>
         </div>
 
@@ -682,15 +681,10 @@
 
         // Analytics: key outbound/copy actions
         const amazonLink = document.getElementById('amazonLink');
-        const readFreeLink = document.getElementById('readFreeLink');
         const customGptLink = document.getElementById('customGptLink');
 
         amazonLink?.addEventListener('click', () => {
             window.pmTrack?.event('click_amazon', { location: 'book_tab' });
-        });
-
-        readFreeLink?.addEventListener('click', () => {
-            window.pmTrack?.event('open_book_online', { location: 'book_tab' });
         });
 
         customGptLink?.addEventListener('click', () => {
