@@ -340,6 +340,87 @@
             color: #ffa500;
         }
 
+        .chapter {
+            text-align: left;
+            max-width: 760px;
+            margin: 0 auto;
+            color: #c5c5c5;
+            font-size: 0.92rem;
+            line-height: 1.8;
+            font-weight: 300;
+            letter-spacing: 0.01em;
+        }
+
+        .chapter-title {
+            font-size: 1.6rem;
+            font-weight: 300;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.05em;
+            line-height: 1.4;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .chapter h3 {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: #ffffff;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .chapter h4 {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #e0e0e0;
+            margin-top: 1.8rem;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.03em;
+            font-style: italic;
+        }
+
+        .chapter p {
+            margin-bottom: 1.1rem;
+        }
+
+        .chapter ul, .chapter ol {
+            margin: 0 0 1.2rem 1.5rem;
+            padding-left: 0.5rem;
+        }
+
+        .chapter li {
+            margin-bottom: 0.6rem;
+        }
+
+        .chapter strong {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .chapter em {
+            color: #bdbdbd;
+        }
+
+        .chapter hr {
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            margin: 2.5rem 0;
+        }
+
+        .chapter .formula {
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.95rem;
+        }
+
         .community-links, .contact-links {
             display: flex;
             flex-direction: column;
@@ -483,6 +564,31 @@
             .roadmap-title {
                 font-size: 0.85rem;
             }
+
+            .chapter {
+                font-size: 0.85rem;
+                line-height: 1.7;
+            }
+
+            .chapter-title {
+                font-size: 1.25rem;
+                margin-bottom: 1.8rem;
+                padding-bottom: 1rem;
+            }
+
+            .chapter h3 {
+                font-size: 0.95rem;
+                margin-top: 2rem;
+            }
+
+            .chapter h4 {
+                font-size: 0.88rem;
+            }
+
+            .chapter .formula {
+                font-size: 0.85rem;
+                padding: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -504,9 +610,9 @@
                 <span class="tab-icon">👥</span>
                 <span class="tab-text">Community</span>
             </div>
-            <div class="tab" data-tab="roadmap">
-                <span class="tab-icon">🗺️</span>
-                <span class="tab-text">Roadmap</span>
+            <div class="tab" data-tab="lost">
+                <span class="tab-icon">📜</span>
+                <span class="tab-text">Lost Chapters</span>
             </div>
             <div class="tab" data-tab="donate">
                 <span class="tab-icon">💝</span>
@@ -528,8 +634,7 @@
 
             <div class="section-title">Access Tools</div>
             <div class="button-container">
-                <a id="customGptLink" href="https://chatgpt.com/g/g-69616a989c888191bea66415401ab261-theory-the-ultimate-generative-model" target="_blank" class="button">Custom GPT (ChatGPT)</a>
-                <button id="copyButton">System Prompt (Other Models)</button>
+                <button id="copyButton">Copy Prompt</button>
             </div>
         </div>
 
@@ -552,44 +657,204 @@
             </div>
         </div>
 
-        <!-- Roadmap Tab -->
-        <div class="tab-content" id="roadmap-content">
-            <div class="section-title">Development Timeline</div>
-            <div class="roadmap-list">
-                <div class="roadmap-item">
-                    <div class="roadmap-title">White Paper</div>
-                    <div class="roadmap-status completed">Completed</div>
-                </div>
-                
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Book I: The Ultimate Generative Model</div>
-                    <div class="roadmap-status completed">Completed</div>
-                </div>
-                
-                <div class="roadmap-item">
-                    <div class="roadmap-title">± Benchmarking Framework for LLMs</div>
-                    <div class="roadmap-status in-progress">In progress — Mid-February 2026</div>
-                </div>
-                
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Mini-LLMs trained on ± Principles + Benchmark Evaluation</div>
-                    <div class="roadmap-status in-progress">In progress — March 2026</div>
-                </div>
-                
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Systematic ± Knowledge Packing (Structured Representation & Compression)</div>
-                    <div class="roadmap-status">Start: March 2026</div>
-                </div>
-                
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Neural Network Architecture informed by ± Theory and empirical data</div>
-                    <div class="roadmap-status">Start: Q2 2026</div>
-                </div>
-                
-                <div class="roadmap-item">
-                    <div class="roadmap-title">Full ± Simulation Environment</div>
-                    <div class="roadmap-status">Long-term research objective</div>
-                </div>
+        <!-- Lost Chapters Tab -->
+        <div class="tab-content" id="lost-content">
+            <div class="section-title">Lost Chapters</div>
+            <div class="chapter">
+                <h2 class="chapter-title">Derivation of the Born Rule from ±Theory</h2>
+
+                <h3>Statement of the Result</h3>
+                <p>The Born rule states that for a quantum system described by amplitudes (a₁, a₂, ..., aₙ) over possible outcomes, the probability of obtaining outcome k upon measurement is:</p>
+                <p class="formula">P(k) = |aₖ|²</p>
+                <p>This derivation shows that within ±Theory, the Born rule is not an independent postulate but follows necessarily from the framework's foundational commitments plus elementary geometric structure. No additional axioms are introduced beyond those already established earlier in the book.</p>
+
+                <hr>
+
+                <h3>The Foundational Principles Used</h3>
+                <p>This derivation invokes two principles established earlier in ±Theory. Both are stated here so the argument is self-contained:</p>
+                <p><strong>Principle 1: Shortest stabilizable description stabilizes first (Knowledge Highways).</strong> Introduced in Chapter 2 of the book. The Tree of Knowledge grows by exhausting all shortest available generative paths before longer ones become accessible. "Description length" is operational: it is the number of available primitive operations required to generate a structure from what is already stabilized. At the earliest stage, only COPY and FLIP are available (from the ± duality itself), so ++ stabilizes before +− because ++ = COPY (one operation) while +− = COPY + FLIP (two operations). Once a structure stabilizes, it becomes a reusable construct — a "knowledge highway" — that reduces the effective description length of anything composable from it. This is the same principle that produces Rule 110/124 dominance, that selects 3D space at level 3 of the recursive structure, and that drives the asymmetric growth of the tree throughout the framework.</p>
+                <p><strong>Principle 2: Discrete and continuous are description choices at sufficient depth.</strong> The tree grows multiplicatively — each level multiplies the available distinctions by 2. At any depth sufficient to support patterns of meaningful complexity, the granularity of discrete distinctions becomes finer than any operational measurement can resolve. Whether the underlying structure is called "discrete with high resolution" or "continuous" is a description choice, not a fact about the structure. Quantum mechanics operates at depths where the continuous description is the natural one; the discrete substrate underneath does not contradict it.</p>
+                <p>These two principles do most of the philosophical work below. Both are framework principles, defined and used throughout the book — not new postulates introduced for this derivation.</p>
+
+                <hr>
+
+                <h3>The Setup</h3>
+                <p>Within ±Theory, reality is the ongoing unfolding of a recursive generative process. Patterns within this process exist in two regimes:</p>
+                <ul>
+                    <li><strong>Pre-stabilization</strong>: patterns whose spatial projection has not yet committed. These are "flickering" — multiple continuations remain compatible.</li>
+                    <li><strong>Post-stabilization</strong>: patterns whose spatial projection has committed. These appear as definite spatial records.</li>
+                </ul>
+                <p>Quantum mechanics describes the pre-stabilization regime. Classical physics describes the post-stabilization regime. "Measurement" is the event of commitment — the transition from one regime to the other.</p>
+
+                <h4>What the Amplitudes aₖ Actually Are</h4>
+                <p>This is the central clarification that makes the rest of the derivation make sense:</p>
+                <p>In ±Theory, three-dimensional space is not a container. It is a compression of the recursive knowledge tree, represented at any chosen resolution depth n as an <strong>octree</strong> — a recursive subdivision of space into 2×2×2 = 8 sub-regions at each level. After n refinement steps, space is represented by 8ⁿ voxels, with arbitrarily fine resolution available in principle.</p>
+                <p>A "particle" is not an object in 3D space. It is a flickering, unstabilized pattern within the recursive tree. The pattern does not have a location until spatial commitment occurs.</p>
+                <p>The index k ranges over the voxels of the octree at whatever resolution depth is being considered. The amplitude aₖ is the <strong>compatibility weight</strong> between the unstabilized pattern and voxel k — a measure of how strongly the pre-spatial pattern aligns with the possibility of committing to that particular voxel in the spatial projection.</p>
+                <p>So the amplitude vector</p>
+                <p class="formula">a⁽ⁿ⁾ = (a₁, a₂, ..., a_{8ⁿ})</p>
+                <p>is the pattern's full compatibility profile across all voxels at resolution depth n. It is not a description of "where the particle is." It is a description of how the unstabilized pattern relates to every possible voxel that <em>could</em> become its spatial location upon commitment.</p>
+                <p>When stabilization occurs, exactly one voxel is selected. The pattern is now "located there" in the spatial projection. The Born rule will tell us the probability of each voxel being selected.</p>
+                <p>The aim of this derivation is to show that P(k) = |aₖ|² follows from this picture without introducing any additional postulates.</p>
+
+                <hr>
+
+                <h3>Step 1: Reversibility Is Definitional, Not Assumed</h3>
+                <p>The core load-bearing observation, and the genuinely novel philosophical move of this derivation:</p>
+                <p><strong>Pre-stabilization evolution must be reversible — not as an extra assumption, but by definition.</strong></p>
+                <p>If a pattern's evolution were irreversible, information would have been lost, which means commitment has already occurred. Irreversibility <em>is</em> stabilization. The two are identical, not merely correlated.</p>
+                <p>Therefore:</p>
+                <ul>
+                    <li>Pre-stabilization ⟺ reversible</li>
+                    <li>Stabilization ⟺ irreversibility ⟺ the event of spatial commitment</li>
+                </ul>
+                <p>This dissolves the measurement problem rather than relocating it. There is no separate dynamical law switching unitary evolution into collapse. "Measurement" is simply the structural boundary where reversibility ends. The framework does not need a measurement postulate because measurement is identified with stabilization, which is built into the framework's foundation.</p>
+                <p>This identification — irreversibility = stabilization — is the headline of the entire derivation. Everything else is geometry built on this single structural commitment.</p>
+
+                <hr>
+
+                <h3>Step 2: Reversibility Forces 2D Rotational Structure with Complex Multiplication</h3>
+                <p>What is the minimal structure that supports reversible evolution rich enough to describe quantum behavior?</p>
+                <p><strong>One real dimension fails.</strong> The only reversible operations available are identity and sign-flip. This is too impoverished to support nontrivial reversible dynamics.</p>
+                <p><strong>Two dimensions succeed.</strong> A 2D space with a rotation rule allows infinitely many reversible operations (rotation by any angle θ), each with a clean inverse (rotation by −θ).</p>
+                <p><strong>Why 2D and not 4D (quaternions) or higher?</strong> This is where Principle 1 (shortest stabilizable description) does its work. Higher-dimensional structures like quaternions or octonions would also support reversibility, but they are longer descriptions and stabilize later, if at all. The framework's growth principle selects the minimal stabilizable structure capable of supporting reversibility — which is exactly 2D. 2D is not the only possible carrier of reversibility; it is the carrier that stabilizes first.</p>
+                <p><strong>Why continuous rather than discrete reversibility?</strong> This is where Principle 2 does its work. The framework is built on discrete recursive ticks, but the discrete/continuous distinction is not fundamental within it. At any depth sufficient to support patterns of meaningful complexity, the granularity of discrete distinctions exceeds operational resolution. Continuous rotation is what discrete reversibility looks like once depth exceeds operational resolution.</p>
+
+                <h4>Why Complex Multiplication Specifically (Why i² = −1 and Not Some Other 2D Algebra)</h4>
+                <p>This is the technical question that distinguishes complex numbers from other 2D algebras such as dual numbers (ε² = 0) or split-complex numbers (j² = +1). Dimension alone does not pin down the algebra. The framework needs to produce specifically the complex algebra, because that is what makes superposition give interference rather than mere mixing.</p>
+                <p>The answer lies in the framework's two distinct involutions:</p>
+                <p><strong>Involution 1: Structural NOT (content-mirror).</strong> Derived in Appendix C of the book as the global mirror symmetry of the recursive possibility space. NOT applied twice returns identity: NOT(NOT(x)) = x. This is the involution that flips ± content.</p>
+                <p><strong>Involution 2: Order-flip.</strong> Derived in Chapter 2 as the order duality at level 2 of the tree, distinguishing −+ from +−. The two are content-identical but order-reversed. Applying order-flip twice returns identity: reversing the order of +− gives back −+, then reversing again returns to +−.</p>
+                <p>The framework provides exactly two independent involutions, each closing after two applications. The <strong>composition</strong> of two independent involutions, each squaring to identity, generates a structure that closes after <em>four</em> applications. This is precisely the defining property of the imaginary unit: i² = −1, i⁴ = 1.</p>
+                <p>Compare with the alternatives:</p>
+                <ul>
+                    <li><strong>Dual numbers (ε² = 0)</strong> would require a nilpotent operation — one that loses structure on repeated application. The framework has no such operation; its operations are reversible by construction (pre-stabilization regime) and reversibility forbids nilpotents.</li>
+                    <li><strong>Split-complex (j² = +1)</strong> would require an involution composing with itself to give identity — but that is just a single involution, not the composition of two independent ones. The framework supplies two distinct involutions, not one repeated.</li>
+                </ul>
+                <p>The complex algebra is therefore what the framework's two-involutions structure generates — not chosen, but forced by the specific involutions the framework supplies. The order duality and the structural NOT are independent (one acts on content, the other on ordering), and their composition produces the i² = −1 algebra.</p>
+                <p>This also explains the physical content: the complex phase encodes path-ordering information from recursive traversals, the magnitude encodes content compatibility, and their interaction (multiplication) combines both correctly under composition.</p>
+                <p>Therefore, amplitudes aₖ ∈ ℂ. Each aₖ is a complex number encoding the compatibility of the pre-spatial pattern with voxel k of the octree, with magnitude reflecting content compatibility and phase reflecting traversal ordering.</p>
+
+                <hr>
+
+                <h3>Step 3: Reversibility Forces Magnitude Conservation</h3>
+                <p>Reversible operations must preserve some quantity. If nothing were preserved, information would be lost, contradicting reversibility.</p>
+                <p>In a 2D rotational structure (complex numbers), the quantity preserved by all rotations is length (magnitude). Rotations preserve length by definition — that is what makes them rotations rather than scalings or shears.</p>
+                <p>Therefore, under pre-stabilization evolution:</p>
+                <ul>
+                    <li>|a| is conserved for each amplitude.</li>
+                    <li>More generally, the total length of the amplitude vector (a₁, a₂, ..., a_{8ⁿ}) is conserved.</li>
+                </ul>
+                <p>This is the structural origin of unitarity (U†U = I) in the standard formalism. Unitarity is the bookkeeping expression of reversible internal evolution prior to stabilization.</p>
+
+                <hr>
+
+                <h3>Step 4: Pythagorean Decomposition Forces Squared Magnitudes</h3>
+                <p>The amplitude vector a⁽ⁿ⁾ = (a₁, a₂, ..., a_{8ⁿ}) represents the pre-spatial pattern's compatibility profile across all voxels of the octree at resolution depth n. The components are orthogonal because the voxels themselves are orthogonal — each voxel is a distinct, mutually exclusive region of the octree subdivision. A pattern that commits to voxel k cannot simultaneously commit to voxel j ≠ k; they are independent spatial outcomes.</p>
+                <p>This orthogonality of voxels is what makes the amplitudes orthogonal components of the total compatibility vector. It is structural, not assumed: the octree's recursive subdivision produces mutually exclusive regions by construction.</p>
+                <p>For orthogonal components in a 2D-per-component (complex) structure, the Pythagorean relation holds:</p>
+                <p class="formula">|a|² = |a₁|² + |a₂|² + ... + |a_{8ⁿ}|²</p>
+                <p>This is geometry, not an additional postulate.</p>
+                <p>If the total amplitude vector has length 1 (the natural normalization for a pattern that must commit to <em>some</em> voxel), then:</p>
+                <p class="formula">|a₁|² + |a₂|² + ... + |a_{8ⁿ}|² = 1</p>
+                <p>Note that the magnitudes themselves (|aₖ|, unsquared) do <strong>not</strong> sum to 1. They sum to something with no clean meaning. Only the <em>squared</em> magnitudes have the property of summing to the conserved total.</p>
+
+                <hr>
+
+                <h3>Step 5: Probability Is Forced by What Has Already Been Built</h3>
+                <p>At commitment (stabilization), the pre-spatial pattern resolves into exactly one voxel of the octree. The probability of resolving to voxel k must be a real number P(k) satisfying:</p>
+                <ol>
+                    <li><strong>Nonnegative</strong>: P(k) ≥ 0</li>
+                    <li><strong>Bounded</strong>: P(k) ≤ 1</li>
+                    <li><strong>Normalized across all voxels</strong>: Σₖ P(k) = 1, where the sum runs over all 8ⁿ voxels at the chosen resolution depth</li>
+                    <li><strong>Consistent with Steps 1–4</strong>: P(k) must derive from aₖ in a way that respects the structure built in the previous steps — complex amplitudes, length conservation, voxel orthogonality, Pythagorean decomposition.</li>
+                </ol>
+                <p>Given the structure built in Steps 1–4, the mapping P(k) = |aₖ|² is what consistency requires. The squared magnitudes are the only quantities derived from aₖ that sum to the conserved total across orthogonal voxels. Magnitudes themselves (|aₖ|) do not sum cleanly. Higher powers (|aₖ|³, etc.) do not respect the Pythagorean structure that voxel orthogonality forces.</p>
+                <p>Therefore:</p>
+                <p class="formula"><strong>P(k) = |aₖ|²</strong></p>
+                <p>This step is a corollary of Steps 1–4 rather than an independent uniqueness result. By the time the previous steps are accepted, |aₖ|² is the mapping consistent with the structure they build. The novelty of this derivation is not in Step 5 — it is in showing where the structure that Step 5 operates on comes from.</p>
+
+                <hr>
+
+                <h3>Stabilization as Gradient, Not Trigger</h3>
+                <p>A natural question arises about what physically triggers a stabilization event. The framework's answer is that stabilization is not a binary trigger but a gradient — and this is consistent with how every other selection mechanism in ±Theory works.</p>
+                <p>Patterns within the framework occupy a spectrum:</p>
+                <ul>
+                    <li><strong>Loopy patterns</strong> are reversible by structural design and stay in the pre-commitment regime indefinitely. These are the deep quantum-regime objects: isolated systems with no coupling to anything that would consume their reversibility-budget.</li>
+                    <li><strong>Shallowly stabilized patterns</strong> have stabilized but only weakly. They drift back into reversibility on some timescale. These correspond to short-lived quasi-classical states, decay processes, and virtual configurations.</li>
+                    <li><strong>Deeply stabilized patterns</strong> have constraint depth so great that local revision is structurally infeasible. These appear permanent at any practical scale — tables, mountains, the persistence of mass discussed in the gravity chapter.</li>
+                </ul>
+                <p>The trigger for stabilization, in this view, is <strong>the rate at which a pattern accumulates constraints relative to its reversibility-budget</strong>. Isolated patterns accumulate few constraints and stay reversible. Coupled patterns accumulate constraints faster than they can be locally reversed, drifting toward stabilization at rates determined by the depth of coupling.</p>
+                <p>This recovers the empirical content of decoherence theory while providing a structural account of <em>why</em> coupling produces stabilization. Decoherence in standard QM is mathematically described by environmental coupling causing off-diagonal density matrix elements to decay — correct as bookkeeping but ontologically empty. The framework's account is structural: coupling adds constraints, constraints reduce the set of locally reversible continuations, and once that set is small enough relative to the pattern's expressive complexity, the pattern is locally indistinguishable from one that has committed.</p>
+                <p>This also explains a phenomenon mentioned in the book's empirical note (§4.9): highly redundant microscopic structures (such as nuclei embedded in crystal lattices) behave classically despite their small size. Standard decoherence handles this with coupling math. The framework explains it structurally: those nuclei are embedded in already-stabilized lattices, so most of their possible continuations are constrained by surrounding structure. They have very little reversibility-budget available, so they stabilize quickly — not because they are physically large, but because they are structurally over-constrained.</p>
+                <p>The framework therefore does not need a separate trigger mechanism. The "when does stabilization happen" question is answered by the gradient: it happens continuously, at rates set by the constraint-accumulation versus reversibility-budget ratio. Sharp measurement events correspond to extreme coupling that exhausts the budget rapidly; isolated quantum coherence corresponds to the opposite extreme.</p>
+
+                <hr>
+
+                <h3>Summary of the Derivation Chain</h3>
+                <ol>
+                    <li>Pre-stabilization is reversible by definition (irreversibility = stabilization). <em>Genuinely novel philosophical move.</em></li>
+                    <li>Reversibility forces 2D rotational structure with complex multiplication → amplitudes are complex. <em>2D selected by Principle 1 (shortest stabilizable description). Continuity emerges from Principle 2 (depth exceeds resolution). The specific complex algebra i² = −1 is forced by the framework's two independent involutions — structural NOT (content-mirror) and order-flip — whose composition closes after four applications.</em></li>
+                    <li>Rotations preserve magnitude → |a| is conserved.</li>
+                    <li>Voxel orthogonality (structural, from the octree subdivision) plus Pythagoras → squared magnitudes sum to the conserved total.</li>
+                    <li>Given the structure built in 1–4, P(k) = |aₖ|² is what consistency requires.</li>
+                </ol>
+                <p>No postulates are added beyond the framework's foundational commitment that pre-stabilization evolution is reversible — and this commitment is definitional rather than additional, since irreversibility is identical with stabilization.</p>
+
+                <hr>
+
+                <h3>Relation to the Book Chapters</h3>
+                <p>The derivation draws on three book chapters whose principles do load-bearing work here:</p>
+                <ul>
+                    <li><strong>Chapter 2 (Genesis):</strong> The shortest-stabilizable-description principle ("knowledge highways") is defined operationally — description length is the number of primitive operations needed to generate a structure from what is already stabilized. ++ stabilizes before +− because ++ requires only COPY while +− requires COPY + FLIP. This same principle selects 2D over higher dimensions in Step 2 of this derivation.</li>
+                    <li><strong>Chapter 3 (±Reality and Space):</strong> The octree derivation establishes 3D space as a compression of the recursive knowledge tree at level 3, with 2³ = 8 corners giving the cube and recursive subdivision giving the octree of voxels. The voxels' mutual exclusivity, used in Step 4, comes from this construction.</li>
+                    <li><strong>Appendix C (Derivation of Logic Prior to Space):</strong> The structural NOT — global mirror symmetry of the recursive possibility space — is one of the two involutions whose composition produces the complex algebra in Step 2.</li>
+                </ul>
+                <p>These are not new principles introduced for the Born derivation. They are the same framework principles that operate throughout the book, applied consistently here.</p>
+
+                <hr>
+
+                <h3>What This Resolves</h3>
+                <p><strong>The measurement problem.</strong> Standard quantum mechanics postulates two dynamical regimes (unitary evolution and collapse) and cannot explain when or why one switches to the other. ±Theory identifies the two regimes with pre-stabilization and post-stabilization, with the "switch" being identical to the commitment event itself. The trigger for commitment is given by the gradient account above. No bridging postulate is required.</p>
+                <p><strong>The status of the wavefunction.</strong> The amplitudes aₖ are not abstract calculation devices and not mysterious physical fields. They are the compatibility profile of an unstabilized pattern with the voxels of the octree.</p>
+                <p><strong>The complex structure of quantum mechanics.</strong> Complex amplitudes are not a mathematical convenience. The 2D dimension is forced as the minimal stabilizable carrier of reversibility. The complex multiplication (i² = −1) is forced by the composition of the framework's two independent involutions. Phase encodes ordering information from recursive traversals; magnitude encodes content compatibility.</p>
+                <p><strong>Why 2D and not higher.</strong> Quaternions and octonions would also support reversibility, but Principle 1 selects the minimal stabilizable structure.</p>
+                <p><strong>The squaring in the Born rule.</strong> Squaring is not an empirical fit. It is forced by the Pythagorean decomposition of orthogonal voxels plus the requirement that probabilities sum to one.</p>
+                <p><strong>Why coupling causes decoherence.</strong> Coupling adds constraints; constraints consume reversibility-budget; exhausted budget is stabilization. This recovers decoherence theory's empirical content with structural rather than mechanical explanation.</p>
+
+                <hr>
+
+                <h3>What Remains Open</h3>
+                <p>In the spirit of honest reporting:</p>
+                <p><strong>Dynamics.</strong> This derivation reconstructs the static structure (Hilbert space, Born rule, the regime distinction). The specific form of pre-stabilization dynamics — recovering the Schrödinger equation, the role of ℏ, observables, commutation relations — is open work. The framework provides a substrate within which this can be developed; the development itself is not yet done.</p>
+                <p>The other gaps that earlier critique flagged (why complex multiplication specifically; what triggers stabilization) are addressed above. Dynamics is the one substantive open problem this derivation does not resolve.</p>
+
+                <hr>
+
+                <h3>Load-Bearing Assumption (Stated Explicitly)</h3>
+                <p>The single load-bearing commitment is:</p>
+                <p><strong>Pre-stabilization evolution must be reversible, because irreversibility is identical with stabilization (spatial commitment).</strong></p>
+                <p>This is definitional within ±Theory, not an additional postulate. Given this, plus the two foundational principles (shortest-stabilizable-description, discrete/continuous as description choices at sufficient depth) that operate throughout the framework, plus the framework's two independent involutions (structural NOT, order-flip) that determine the complex algebra, the Born rule follows.</p>
+
+                <hr>
+
+                <h3>Relationship to Existing Results</h3>
+                <p>This derivation constructs the substrate that Gleason's theorem assumes. Gleason proves that, <em>given</em> a Hilbert space of dimension ≥ 3 and certain assumptions about how probability measures must behave on it, the Born rule is forced. Gleason does not explain where Hilbert space comes from in the first place, nor where the complex structure originates.</p>
+                <p>±Theory addresses that prior question. The complex amplitudes, the linear structure, the inner product, the orthogonality of distinct outcomes — all of these emerge from the framework's commitments (recursive duality, octree compression of space, irreversibility-as-stabilization, shortest-stabilizable-description, two independent involutions). Once they emerge, the Gleason-style reasoning that produces P(k) = |aₖ|² is available, and this derivation uses it in Steps 4 and 5.</p>
+                <p>The novelty is therefore not in the final step (which echoes existing reconstructions) but in the construction of the substrate. Where Hardy, Chiribella, and Masanes postulate informational principles to derive quantum structure, ±Theory derives those principles themselves from a generative substrate.</p>
+                <p>So the honest relationship is:</p>
+                <ul>
+                    <li><strong>Like Gleason</strong>: Once Hilbert space is in place, |aₖ|² is forced.</li>
+                    <li><strong>Unlike Gleason</strong>: Hilbert space is not assumed; it is constructed from the framework's commitments.</li>
+                    <li><strong>Like Hardy/Chiribella/Masanes</strong>: Quantum mechanics is reconstructed from a small number of foundational principles rather than postulated.</li>
+                    <li><strong>Unlike Hardy/Chiribella/Masanes</strong>: Those principles are themselves derived from a generative substrate, rather than being introduced as informational axioms.</li>
+                </ul>
+                <p>The genuinely new contributions are:</p>
+                <ol>
+                    <li><strong>Step 1</strong> — the identification of irreversibility with stabilization — which removes the need for a separate measurement postulate that all existing reconstructions still require.</li>
+                    <li><strong>The complex-algebra derivation</strong> — generating i² = −1 specifically from the composition of two structurally given involutions (NOT and order-flip), rather than postulating it.</li>
+                    <li><strong>The gradient account of stabilization</strong> — replacing the binary trigger of standard measurement theory with a continuous structural account of how patterns drift from reversible to committed.</li>
+                </ol>
             </div>
         </div>
 
@@ -683,7 +948,6 @@
         // Analytics: key outbound/copy actions
         const amazonLink = document.getElementById('amazonLink');
         const readFreeLink = document.getElementById('readFreeLink');
-        const customGptLink = document.getElementById('customGptLink');
 
         amazonLink?.addEventListener('click', () => {
             window.pmTrack?.event('click_amazon', { location: 'book_tab' });
@@ -691,10 +955,6 @@
 
         readFreeLink?.addEventListener('click', () => {
             window.pmTrack?.event('open_book_online', { location: 'book_tab' });
-        });
-
-        customGptLink?.addEventListener('click', () => {
-            window.pmTrack?.event('click_custom_gpt', { location: 'ai_tab' });
         });
 
         walletButtons.forEach(button => {
