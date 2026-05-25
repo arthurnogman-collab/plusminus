@@ -720,17 +720,6 @@
                 <p><strong>Why 2D and not 4D (quaternions) or higher?</strong> This is where Principle 1 (shortest stabilizable description) does its work. Higher-dimensional structures like quaternions or octonions would also support reversibility, but they are longer descriptions and stabilize later, if at all. The framework's growth principle selects the minimal stabilizable structure capable of supporting reversibility — which is exactly 2D. 2D is not the only possible carrier of reversibility; it is the carrier that stabilizes first.</p>
                 <p><strong>Why continuous rather than discrete reversibility?</strong> This is where Principle 2 does its work. The framework is built on discrete recursive ticks, but the discrete/continuous distinction is not fundamental within it. At any depth sufficient to support patterns of meaningful complexity, the granularity of discrete distinctions exceeds operational resolution. Continuous rotation is what discrete reversibility looks like once depth exceeds operational resolution.</p>
 
-                <h4>Which 2D Algebra? Complex vs. Split-Complex</h4>
-                <p>Dimension alone does not pin down the algebra. A reversible 2D rotational structure is compatible with more than one 2D number system, and they differ physically:</p>
-                <ul>
-                    <li><strong>Dual numbers (ε² = 0)</strong> are ruled out directly. A nilpotent operation loses structure on repeated application, whereas the framework's pre-stabilization operations are reversible by construction — and reversibility forbids nilpotents. They are also the longer description, so the shortest-stabilizable-description principle excludes them on a second, independent ground.</li>
-                    <li><strong>Complex numbers (i² = −1)</strong> give rotations that <em>interfere</em>: superposing amplitudes produces genuine interference.</li>
-                    <li><strong>Split-complex numbers (j² = +1)</strong> give hyperbolic "rotations" that merely <em>mix</em>: superposition without interference.</li>
-                </ul>
-                <p>Reversibility (which excludes the nilpotent dual numbers) together with the minimal-path principle (which selects 2D over quaternions and octonions) establishes that the carrier is a <strong>reversible, length-conserving 2D algebra</strong>. These principles do <em>not</em>, by themselves, single out the complex case (i² = −1, interfering) over the split-complex case (j² = +1, non-interfering).</p>
-                <p>Selecting the complex case is thus a <strong>physical input, not a theorem of the framework</strong>: we require that the pre-stabilization regime exhibits interference rather than mere mixing, which is what observation reports. Closing this gap internally would require exhibiting a genuinely <em>anticommuting</em> pair of operations somewhere in the tree, which remains open work. With the complex case adopted as a physical input matching observation, the derivation proceeds.</p>
-                <p>Therefore, amplitudes aₖ ∈ ℂ. Each aₖ is a complex number encoding the compatibility of the pre-spatial pattern with voxel k of the octree, with magnitude reflecting content compatibility and phase reflecting traversal ordering.</p>
-
                 <hr>
 
                 <h3>Step 3: Reversibility Forces Magnitude Conservation</h3>
@@ -816,39 +805,6 @@
                 <p><strong>Why 2D and not higher.</strong> Quaternions and octonions would also support reversibility, but Principle 1 selects the minimal stabilizable structure.</p>
                 <p><strong>The squaring in the Born rule.</strong> Squaring is not an empirical fit. It is forced by the Pythagorean decomposition of orthogonal voxels plus the requirement that probabilities sum to one.</p>
                 <p><strong>Why coupling causes decoherence.</strong> Coupling adds constraints; constraints consume reversibility-budget; exhausted budget is stabilization. This recovers decoherence theory's empirical content with structural rather than mechanical explanation.</p>
-
-                <hr>
-
-                <h3>What Remains Open</h3>
-                <p>In the spirit of honest reporting:</p>
-                <p><strong>Dynamics.</strong> This derivation reconstructs the static structure (Hilbert space, Born rule, the regime distinction). The specific form of pre-stabilization dynamics — recovering the Schrödinger equation, the role of ℏ, observables, commutation relations — is open work. The framework provides a substrate within which this can be developed; the development itself is not yet done.</p>
-                <p>Of the other gaps earlier critique flagged: what triggers stabilization is addressed above (the gradient account). Why the algebra is specifically complex rather than split-complex is <em>not</em> resolved internally — it is scoped above as a physical input matching observed interference, and deriving it would require exhibiting a genuinely anticommuting pair of operations in the tree. That selection and dynamics are the substantive open problems this derivation does not resolve.</p>
-
-                <hr>
-
-                <h3>Load-Bearing Assumption (Stated Explicitly)</h3>
-                <p>The single load-bearing commitment is:</p>
-                <p><strong>Pre-stabilization evolution must be reversible, because irreversibility is identical with stabilization (spatial commitment).</strong></p>
-                <p>This is definitional within ±Theory, not an additional postulate. Given this, plus the two foundational principles (shortest-stabilizable-description, discrete/continuous as description choices at sufficient depth) that operate throughout the framework, plus the physical input that the pre-stabilization regime is interfering (selecting the complex over the split-complex algebra — see Step 2), the Born rule follows.</p>
-
-                <hr>
-
-                <h3>Relationship to Existing Results</h3>
-                <p>This derivation constructs the substrate that Gleason's theorem assumes. Gleason proves that, <em>given</em> a Hilbert space of dimension ≥ 3 and certain assumptions about how probability measures must behave on it, the Born rule is forced. Gleason does not explain where Hilbert space comes from in the first place, nor where the complex structure originates.</p>
-                <p>±Theory addresses that prior question. The linear structure, the inner product, the orthogonality of distinct outcomes, and the 2D-per-component carrier all emerge from the framework's commitments (recursive duality, octree compression of space, irreversibility-as-stabilization, shortest-stabilizable-description); the specifically complex (rather than split-complex) character of the amplitudes enters as a physical input matching observed interference. Once these are in place, the Gleason-style reasoning that produces P(k) = |aₖ|² is available, and this derivation uses it in Steps 4 and 5.</p>
-                <p>The novelty is therefore not in the final step (which echoes existing reconstructions) but in the construction of the substrate. Where Hardy, Chiribella, and Masanes postulate informational principles to derive quantum structure, ±Theory derives those principles themselves from a generative substrate.</p>
-                <p>So the honest relationship is:</p>
-                <ul>
-                    <li><strong>Like Gleason</strong>: Once Hilbert space is in place, |aₖ|² is forced.</li>
-                    <li><strong>Unlike Gleason</strong>: Hilbert space is not assumed; it is constructed from the framework's commitments.</li>
-                    <li><strong>Like Hardy/Chiribella/Masanes</strong>: Quantum mechanics is reconstructed from a small number of foundational principles rather than postulated.</li>
-                    <li><strong>Unlike Hardy/Chiribella/Masanes</strong>: Those principles are themselves derived from a generative substrate, rather than being introduced as informational axioms.</li>
-                </ul>
-                <p>The genuinely new contributions are:</p>
-                <ol>
-                    <li><strong>Step 1</strong> — the identification of irreversibility with stabilization — which removes the need for a separate measurement postulate that all existing reconstructions still require.</li>
-                    <li><strong>The gradient account of stabilization</strong> — replacing the binary trigger of standard measurement theory with a continuous structural account of how patterns drift from reversible to committed.</li>
-                </ol>
             </div>
         </div>
 
