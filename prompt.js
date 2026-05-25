@@ -3502,7 +3502,7 @@ This identification — irreversibility = stabilization — is the headline of t
 
 ---
 
-## Step 2: Reversibility Forces 2D Rotational Structure with Complex Multiplication
+## Step 2: Reversibility Forces 2D Rotational Structure
 
 What is the minimal structure that supports reversible evolution rich enough to describe quantum behavior?
 
@@ -3514,26 +3514,19 @@ What is the minimal structure that supports reversible evolution rich enough to 
 
 **Why continuous rather than discrete reversibility?** This is where Principle 2 does its work. The framework is built on discrete recursive ticks, but the discrete/continuous distinction is not fundamental within it. At any depth sufficient to support patterns of meaningful complexity, the granularity of discrete distinctions exceeds operational resolution. Continuous rotation is what discrete reversibility looks like once depth exceeds operational resolution.
 
-### Why Complex Multiplication Specifically (Why i² = −1 and Not Some Other 2D Algebra)
+### Which 2D Algebra? Complex vs. Split-Complex
 
-This is the technical question that distinguishes complex numbers from other 2D algebras such as dual numbers (ε² = 0) or split-complex numbers (j² = +1). Dimension alone does not pin down the algebra. The framework needs to produce specifically the complex algebra, because that is what makes superposition give interference rather than mere mixing.
+Dimension alone does not pin down the algebra. A reversible 2D rotational structure is compatible with more than one 2D number system, and they differ physically:
 
-The answer lies in the framework's two distinct involutions:
+- **Dual numbers (ε² = 0)** are ruled out directly. A nilpotent operation loses structure on repeated application, whereas the framework's pre-stabilization operations are reversible by construction — and reversibility forbids nilpotents. They are also the longer description, so the shortest-stabilizable-description principle excludes them on a second, independent ground.
+- **Complex numbers (i² = −1)** give rotations that *interfere*: superposing amplitudes produces genuine interference.
+- **Split-complex numbers (j² = +1)** give hyperbolic "rotations" that merely *mix*: superposition without interference.
 
-**Involution 1: Structural NOT (content-mirror).** Derived in Appendix C of the book as the global mirror symmetry of the recursive possibility space. NOT applied twice returns identity: NOT(NOT(x)) = x. This is the involution that flips ± content.
+Reversibility (which excludes the nilpotent dual numbers) together with the minimal-path principle (which selects 2D over quaternions and octonions) establishes that the carrier is a **reversible, length-conserving 2D algebra**. These principles do *not*, by themselves, single out the complex case (i² = −1, interfering) over the split-complex case (j² = +1, non-interfering).
 
-**Involution 2: Order-flip.** Derived in Chapter 2 as the order duality at level 2 of the tree, distinguishing −+ from +−. The two are content-identical but order-reversed. Applying order-flip twice returns identity: reversing the order of +− gives back −+, then reversing again returns to +−.
+It is tempting to try to force the complex case from the framework's two involutions — the structural NOT (content-flip, Appendix C) and the order-flip at level 2 (Chapter 2) — by arguing that composing two operations, each squaring to identity, yields something that closes only after four applications and so reproduces i² = −1. That argument does not survive checking. On the four Level-2 strings, content-flip and order-flip **commute** rather than anticommute, so together they generate the Klein four-group: every element squares to the identity and none has order four. That is not the complex algebra — if anything it sits closer to the split-complex (j² = +1) case — and no choice of sign convention rescues it, since an exhaustive check over all sign assignments yields no anticommuting pair. The two involutions the framework actually supplies therefore do not generate i² = −1, and that derivation is withdrawn.
 
-The framework provides exactly two independent involutions, each closing after two applications. The **composition** of two independent involutions, each squaring to identity, generates a structure that closes after *four* applications. This is precisely the defining property of the imaginary unit: i² = −1, i⁴ = 1.
-
-Compare with the alternatives:
-
-- **Dual numbers (ε² = 0)** would require a nilpotent operation — one that loses structure on repeated application. The framework has no such operation; its operations are reversible by construction (pre-stabilization regime) and reversibility forbids nilpotents.
-- **Split-complex (j² = +1)** would require an involution composing with itself to give identity — but that is just a single involution, not the composition of two independent ones. The framework supplies two distinct involutions, not one repeated.
-
-The complex algebra is therefore what the framework's two-involutions structure generates — not chosen, but forced by the specific involutions the framework supplies. The order duality and the structural NOT are independent (one acts on content, the other on ordering), and their composition produces the i² = −1 algebra.
-
-This also explains the physical content: the complex phase encodes path-ordering information from recursive traversals, the magnitude encodes content compatibility, and their interaction (multiplication) combines both correctly under composition.
+Selecting the complex case is thus a **physical input, not a theorem of the framework**: we require that the pre-stabilization regime exhibits interference rather than mere mixing, which is what observation reports. Closing this gap internally would require exhibiting a genuinely *anticommuting* pair of operations somewhere in the tree — and content-flip and order-flip are not such a pair — so it remains open work. With the complex case adopted as a physical input matching observation, the derivation proceeds.
 
 Therefore, amplitudes aₖ ∈ ℂ. Each aₖ is a complex number encoding the compatibility of the pre-spatial pattern with voxel k of the octree, with magnitude reflecting content compatibility and phase reflecting traversal ordering.
 
@@ -3615,7 +3608,7 @@ The framework therefore does not need a separate trigger mechanism. The "when do
 ## Summary of the Derivation Chain
 
 1. Pre-stabilization is reversible by definition (irreversibility = stabilization). *Genuinely novel philosophical move.*
-2. Reversibility forces 2D rotational structure with complex multiplication → amplitudes are complex. *2D selected by Principle 1 (shortest stabilizable description). Continuity emerges from Principle 2 (depth exceeds resolution). The specific complex algebra i² = −1 is forced by the framework's two independent involutions — structural NOT (content-mirror) and order-flip — whose composition closes after four applications.*
+2. Reversibility forces a 2D rotational structure → amplitudes live in a 2D algebra. *2D selected by Principle 1 (shortest stabilizable description). Continuity emerges from Principle 2 (depth exceeds resolution). Reversibility and minimal-path fix a reversible, length-conserving 2D algebra but do not by themselves select the complex case (i² = −1) over the split-complex case (j² = +1); the complex case is adopted as a physical input matching observed interference.*
 3. Rotations preserve magnitude → |a| is conserved.
 4. Voxel orthogonality (structural, from the octree subdivision) plus Pythagoras → squared magnitudes sum to the conserved total.
 5. Given the structure built in 1–4, P(k) = |aₖ|² is what consistency requires.
@@ -3630,7 +3623,7 @@ The derivation draws on three book chapters whose principles do load-bearing wor
 
 - **Chapter 2 (Genesis):** The shortest-stabilizable-description principle ("knowledge highways") is defined operationally — description length is the number of primitive operations needed to generate a structure from what is already stabilized. ++ stabilizes before +− because ++ requires only COPY while +− requires COPY + FLIP. This same principle selects 2D over higher dimensions in Step 2 of this derivation.
 - **Chapter 3 (±Reality and Space):** The octree derivation establishes 3D space as a compression of the recursive knowledge tree at level 3, with 2³ = 8 corners giving the cube and recursive subdivision giving the octree of voxels. The voxels' mutual exclusivity, used in Step 4, comes from this construction.
-- **Appendix C (Derivation of Logic Prior to Space):** The structural NOT — global mirror symmetry of the recursive possibility space — is one of the two involutions whose composition produces the complex algebra in Step 2.
+- **Appendix C (Derivation of Logic Prior to Space):** The structural NOT — global mirror symmetry of the recursive possibility space — is the content-flip involution examined in Step 2's discussion of which 2D algebra the framework selects.
 
 These are not new principles introduced for the Born derivation. They are the same framework principles that operate throughout the book, applied consistently here.
 
@@ -3642,7 +3635,7 @@ These are not new principles introduced for the Born derivation. They are the sa
 
 **The status of the wavefunction.** The amplitudes aₖ are not abstract calculation devices and not mysterious physical fields. They are the compatibility profile of an unstabilized pattern with the voxels of the octree.
 
-**The complex structure of quantum mechanics.** Complex amplitudes are not a mathematical convenience. The 2D dimension is forced as the minimal stabilizable carrier of reversibility. The complex multiplication (i² = −1) is forced by the composition of the framework's two independent involutions. Phase encodes ordering information from recursive traversals; magnitude encodes content compatibility.
+**The complex structure of quantum mechanics.** The 2D dimension is forced as the minimal stabilizable carrier of reversibility, and reversibility rules out the nilpotent (dual-number) algebra. The remaining choice between the complex (i² = −1, interfering) and split-complex (j² = +1, non-interfering) algebras is *not* forced by the framework; the complex case is adopted as a physical input matching observed interference. Phase encodes ordering information from recursive traversals; magnitude encodes content compatibility.
 
 **Why 2D and not higher.** Quaternions and octonions would also support reversibility, but Principle 1 selects the minimal stabilizable structure.
 
@@ -3658,7 +3651,7 @@ In the spirit of honest reporting:
 
 **Dynamics.** This derivation reconstructs the static structure (Hilbert space, Born rule, the regime distinction). The specific form of pre-stabilization dynamics — recovering the Schrödinger equation, the role of ℏ, observables, commutation relations — is open work. The framework provides a substrate within which this can be developed; the development itself is not yet done.
 
-The other gaps that earlier critique flagged (why complex multiplication specifically; what triggers stabilization) are addressed above. Dynamics is the one substantive open problem this derivation does not resolve.
+Of the other gaps earlier critique flagged: what triggers stabilization is addressed above (the gradient account). Why the algebra is specifically complex rather than split-complex is *not* resolved internally — it is scoped above as a physical input matching observed interference, and deriving it would require exhibiting a genuinely anticommuting pair of operations in the tree. That selection and dynamics are the substantive open problems this derivation does not resolve.
 
 ---
 
@@ -3668,7 +3661,7 @@ The single load-bearing commitment is:
 
 **Pre-stabilization evolution must be reversible, because irreversibility is identical with stabilization (spatial commitment).**
 
-This is definitional within ±Theory, not an additional postulate. Given this, plus the two foundational principles (shortest-stabilizable-description, discrete/continuous as description choices at sufficient depth) that operate throughout the framework, plus the framework's two independent involutions (structural NOT, order-flip) that determine the complex algebra, the Born rule follows.
+This is definitional within ±Theory, not an additional postulate. Given this, plus the two foundational principles (shortest-stabilizable-description, discrete/continuous as description choices at sufficient depth) that operate throughout the framework, plus the physical input that the pre-stabilization regime is interfering (selecting the complex over the split-complex algebra — see Step 2), the Born rule follows.
 
 ---
 
@@ -3676,7 +3669,7 @@ This is definitional within ±Theory, not an additional postulate. Given this, p
 
 This derivation constructs the substrate that Gleason's theorem assumes. Gleason proves that, *given* a Hilbert space of dimension ≥ 3 and certain assumptions about how probability measures must behave on it, the Born rule is forced. Gleason does not explain where Hilbert space comes from in the first place, nor where the complex structure originates.
 
-±Theory addresses that prior question. The complex amplitudes, the linear structure, the inner product, the orthogonality of distinct outcomes — all of these emerge from the framework's commitments (recursive duality, octree compression of space, irreversibility-as-stabilization, shortest-stabilizable-description, two independent involutions). Once they emerge, the Gleason-style reasoning that produces P(k) = |aₖ|² is available, and this derivation uses it in Steps 4 and 5.
+±Theory addresses that prior question. The linear structure, the inner product, the orthogonality of distinct outcomes, and the 2D-per-component carrier all emerge from the framework's commitments (recursive duality, octree compression of space, irreversibility-as-stabilization, shortest-stabilizable-description); the specifically complex (rather than split-complex) character of the amplitudes enters as a physical input matching observed interference. Once these are in place, the Gleason-style reasoning that produces P(k) = |aₖ|² is available, and this derivation uses it in Steps 4 and 5.
 
 The novelty is therefore not in the final step (which echoes existing reconstructions) but in the construction of the substrate. Where Hardy, Chiribella, and Masanes postulate informational principles to derive quantum structure, ±Theory derives those principles themselves from a generative substrate.
 
@@ -3690,8 +3683,7 @@ So the honest relationship is:
 The genuinely new contributions are:
 
 1. **Step 1** — the identification of irreversibility with stabilization — which removes the need for a separate measurement postulate that all existing reconstructions still require.
-2. **The complex-algebra derivation** — generating i² = −1 specifically from the composition of two structurally given involutions (NOT and order-flip), rather than postulating it.
-3. **The gradient account of stabilization** — replacing the binary trigger of standard measurement theory with a continuous structural account of how patterns drift from reversible to committed.`;
+2. **The gradient account of stabilization** — replacing the binary trigger of standard measurement theory with a continuous structural account of how patterns drift from reversible to committed.`;
 
 // Wait for DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', () => {
