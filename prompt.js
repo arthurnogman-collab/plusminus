@@ -3524,9 +3524,7 @@ Dimension alone does not pin down the algebra. A reversible 2D rotational struct
 
 Reversibility (which excludes the nilpotent dual numbers) together with the minimal-path principle (which selects 2D over quaternions and octonions) establishes that the carrier is a **reversible, length-conserving 2D algebra**. These principles do *not*, by themselves, single out the complex case (i² = −1, interfering) over the split-complex case (j² = +1, non-interfering).
 
-It is tempting to try to force the complex case from the framework's two involutions — the structural NOT (content-flip, Appendix C) and the order-flip at level 2 (Chapter 2) — by arguing that composing two operations, each squaring to identity, yields something that closes only after four applications and so reproduces i² = −1. That argument does not survive checking. On the four Level-2 strings, content-flip and order-flip **commute** rather than anticommute, so together they generate the Klein four-group: every element squares to the identity and none has order four. That is not the complex algebra — if anything it sits closer to the split-complex (j² = +1) case — and no choice of sign convention rescues it, since an exhaustive check over all sign assignments yields no anticommuting pair. The two involutions the framework actually supplies therefore do not generate i² = −1, and that derivation is withdrawn.
-
-Selecting the complex case is thus a **physical input, not a theorem of the framework**: we require that the pre-stabilization regime exhibits interference rather than mere mixing, which is what observation reports. Closing this gap internally would require exhibiting a genuinely *anticommuting* pair of operations somewhere in the tree — and content-flip and order-flip are not such a pair — so it remains open work. With the complex case adopted as a physical input matching observation, the derivation proceeds.
+Selecting the complex case is thus a **physical input, not a theorem of the framework**: we require that the pre-stabilization regime exhibits interference rather than mere mixing, which is what observation reports. Closing this gap internally would require exhibiting a genuinely *anticommuting* pair of operations somewhere in the tree, which remains open work. With the complex case adopted as a physical input matching observation, the derivation proceeds.
 
 Therefore, amplitudes aₖ ∈ ℂ. Each aₖ is a complex number encoding the compatibility of the pre-spatial pattern with voxel k of the octree, with magnitude reflecting content compatibility and phase reflecting traversal ordering.
 
@@ -3619,11 +3617,10 @@ No postulates are added beyond the framework's foundational commitment that pre-
 
 ## Relation to the Book Chapters
 
-The derivation draws on three book chapters whose principles do load-bearing work here:
+The derivation draws on two book chapters whose principles do load-bearing work here:
 
 - **Chapter 2 (Genesis):** The shortest-stabilizable-description principle ("knowledge highways") is defined operationally — description length is the number of primitive operations needed to generate a structure from what is already stabilized. ++ stabilizes before +− because ++ requires only COPY while +− requires COPY + FLIP. This same principle selects 2D over higher dimensions in Step 2 of this derivation.
 - **Chapter 3 (±Reality and Space):** The octree derivation establishes 3D space as a compression of the recursive knowledge tree at level 3, with 2³ = 8 corners giving the cube and recursive subdivision giving the octree of voxels. The voxels' mutual exclusivity, used in Step 4, comes from this construction.
-- **Appendix C (Derivation of Logic Prior to Space):** The structural NOT — global mirror symmetry of the recursive possibility space — is the content-flip involution examined in Step 2's discussion of which 2D algebra the framework selects.
 
 These are not new principles introduced for the Born derivation. They are the same framework principles that operate throughout the book, applied consistently here.
 
