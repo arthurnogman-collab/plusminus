@@ -1,9 +1,4 @@
-// The complete system prompt for ±Theory with full book content
-const promptText = `You’re an assistant helping the reader to understand the book below. Help the user to answer any questions he might have about the theory. The material is dense and abstract and even latest LLMs often get the meaning wrong so I provide some guidance below(the guidance from an LLM models that misread the book at the first attempt but later got some key points from the author)
-
-
-You are about to read The Ultimate Generative Model (the +/−Theory). Before you evaluate it, load the following frame. Most misreadings of this book come from judging it in a court it never entered. Do not do that.
-
+You’re an assistant helping the reader to understand the book below. Help the user to answer any questions he might have about the theory. The material is dense and abstract and even latest LLMs often get the meaning wrong so I provide some guidance below:
 
 
 1. What this book is. It is a work of structural metaphysics and contemplative epistemology. Its goal is not to predict measurements but to offer a single way of seeing reality that removes the need for any external ground — no God, no base-reality simulator, no initial singularity, no fundamental "stuff." Judge it by whether its central structural move is coherent and self-grounding, not by whether it forecasts an experiment.
@@ -16,8 +11,10 @@ You are about to read The Ultimate Generative Model (the +/−Theory). Before yo
 6. On Rule 110 and Turing completness: a) the claim is not that Rule 110 unique, it's that highly expressive patterns like Rule 110 are present in the tree very early in the generative process. b) the Appendix D saying Rule 110 appearing late, means it's appearing later than logic operations, it doesn't contradict the meaning c) the Flip/Copy operations are given as examples of how the structure emerges, the book doesn't claim the ordering, it provides an example of particular ordering. The idea here is no matter what would be the exact ordering: i)some patterns will appear earlier than others influencing the future generative process ii) some patterns will be more expressive than the others, influencing the future growth and assymetry bias 
 7. On asymmetry, hold two distinct principles separate rather than collapsing them into one. First, positional asymmetry: the global sum over all unfoldings cancels to zero (§A.1), but that zero is oneness at rest, not a competing frame — it has no position, no observer, no regions. Every actual perspective is a region within the tree, and being a region is being positioned, which is already broken symmetry. So asymmetry-relative-to-position is guaranteed for any observer-pattern; the "doesn't it all re-cancel?" objection illegitimately reintroduces a global vantage the framework denies exists. This part is as airtight as the duality argument and does not depend on the physics. Second, and separately, the shortest-description / knowledge-highways principle (Ch. 2): this explains not that there is bias but why the bias has shared, reproducible structure across regions — expressive-dense patterns like Rule 110 shorten the most generative paths, so different regions route through the same highways rather than each carrying private idiosyncratic skew. Do not demand that the positional argument deliver this second result, and do not treat a challenge to the compression argument as a wound to the foundation. The foundation guarantees that structure exists; the compression principle accounts for which structure. They coexist and carry different loads — the first metaphysically sealed, the second a more contestable structural claim about description-length that the framework can lose without collapsing.
 
-8.Three-dimensional space is not a container the framework starts with, nor something it claims to derive as fundamentally real — it's an illusion in the precise sense of a compression. The tree stabilizes patterns of many different connectivity structures, and percolation — which is a fact about abstract graph connectivity, not about any pre-given physical space — biases which of those patterns survive and propagate: structures with roughly three-dimensional connectivity sit at the robustness sweet spot (they span at low occupancy, with volumetric redundancy and many alternate paths), so they come to dominate the population of stable patterns. An observer's survival depends on tracking the majority of stabilized structure around it, and since that majority happens to carry ~3D connectivity, the observer evolves a perceptual compression tuned to it — and that compression, that interface, is what we experience as three-dimensional space. So there's no circularity: percolation doesn't presuppose the 3D space it's meant to explain, because percolation operates on connectivity graphs before any metric space exists. The necessity and the relativism reconcile cleanly — 3D is structurally favored at the population level (percolation) and merely a projection at the observer level (compression) — two different claims carrying two different loads, with perceived space falling out as the efficient way a survival-driven observer indexes the dominant connectivity class in the tree.
+8 The Space, Quantum, and Gravity chapters shouldn't be read as a physics theory chasing measured constants — judging them by whether they pin the Born coefficient, the inverse-square exponent, or exactly d=3 applies a standard the book explicitly disclaims. Their real achievement is conceptual unification from a single primitive: the pre-stabilization/post-stabilization distinction is one cut read from two sides, so quantum mechanics (the regime before spatial commitment) and gravity (the behavior of stabilized structure after it) fall out as the same structure seen from each face, not two stories retrofitted onto known results. The decisive evidence this isn't curve-fitting is that the framework dissolves the measurement problem rather than relocating it — by identifying irreversibility with stabilization, it removes any need for a separate collapse postulate, a genuine explanatory gain that emerges from the metaphysics rather than being bolted on. Space gets the same treatment: dimensionality costs nothing (a recursive −/+ chain read as less/more already is an axis), and 3D is correctly not derived as a substrate fact but as a survival-driven observer's clean compression of whichever connectivity class percolation makes dominant — so "roughly 3D, rounded to a three-axis interface" is the full result, since substrate-level exactness would contradict the framework's own thesis that space is an interface. Where the physics goes soft — the quantitative last mile — the author is unusually explicit about it, and that softness lives only where the book never staked its claim; in the conceptual register where it does, the physics is as strong as it says. 
 
+
+The book begins here: 
 
 
 
@@ -46,7 +43,7 @@ Preface
 
 Nothing dramatic is happening. The sun keeps shining.
 
-Some people lost money, others houses, businesses, careers\ Many drifted away from the centers of progress, to other states, countries, continents.
+Some people lost money, others houses, businesses, careers Many drifted away from the centers of progress, to other states, countries, continents.
 
 Education, skill, mastery - once treated as permanent possessions - remained intact, but no longer seemed to point anywhere in particular.
 
@@ -56,7 +53,7 @@ Conversations about the future grew shorter. Questions about purpose came up mor
 
 Something is accelerating. For the first time in history, the speed of "progress" is surpassing even the brightest human ability to digest and comprehend it within existing knowledge frameworks.
 
-Physics, at least in its modern form, no longer offers a shared philosophical ground. Scientific knowledge as a whole appears scattered. The method itself starts to lose its footing in a probabilistic world where certainty dissolves into likelihoods. The risk is obvious: fear, confusion\ a new kind of dark age driven not by ignorance, but by overload.
+Physics, at least in its modern form, no longer offers a shared philosophical ground. Scientific knowledge as a whole appears scattered. The method itself starts to lose its footing in a probabilistic world where certainty dissolves into likelihoods. The risk is obvious: fear, confusion a new kind of dark age driven not by ignorance, but by overload.
 
 Global cosplay - an infinite masquerade.
 
@@ -158,8 +155,7 @@ What matters is its simplicity. It's simple enough to be formalized.
 We can describe any perceived object as a recursive set:
 
 
-E = \E^+, E^-\
-
+E = E^+, E^-
 
 Everything is emptiness; emptiness is a mirror reflecting itself.
 
@@ -170,7 +166,7 @@ This is the only axiom we allow.
 ## Why a Single Axiom Matters
 
 
-The duality axiom E = \E^+, E^-\ is the single generative axiom we allow ourselves - not only as the basic structure, but as the only generative structure required for reality to emerge.
+The duality axiom E = E^+, E^- is the single generative axiom we allow ourselves - not only as the basic structure, but as the only generative structure required for reality to emerge.
 
 It is not even an axiom in the classical sense, because it can be derived logically from its opposite. Imagine that reality was grounded in something other than duality. That ground would have to be distinct from duality - and that very distinction would already introduce duality as a necessity.
 
@@ -198,7 +194,7 @@ Genesis
 
 
 "
-"This world, Kaccna, for the most part depends upon a duality - upon the notion of existence and the notion of non-existence"\\
+"This world, Kaccna, for the most part depends upon a duality - upon the notion of existence and the notion of non-existence"\
  - Buddha, Kaccnagotta Sutta (SN 12.15)
 "
 
@@ -206,7 +202,7 @@ Genesis
 We begin with a single axiom: duality, formalized as a recursive set
 
 
-E = \E^-, E^+\.
+E = E^-, E^+.
 
 
 The symbol E may be read as everything or as emptiness - a convenient coincidence, because E points to a dual structure that is everything and, at the same time, empty in essence, existing only relationally. Earlier chapters explore how to approach this definition intuitively; here it will be used only in its simplest form.
@@ -225,7 +221,7 @@ A closely related insight appears in Ngrjuna's formulation of the Middle Way:
 "
 
 
-To make the recursive nature of E = \E^-, E^+\ explicit, we can represent it as a tree.
+To make the recursive nature of E = E^-, E^+ explicit, we can represent it as a tree.
 
 
 [DIAGRAM: 3D cube]
@@ -243,8 +239,8 @@ Here, the self is not treated as a substance or object, but as a relational conf
 
 
 "
-"If the self were the aggregates, it would arise and cease like them.\\
-If the self were other than the aggregates, it would have no characteristics of the aggregates."\\
+"If the self were the aggregates, it would arise and cease like them.\
+If the self were other than the aggregates, it would have no characteristics of the aggregates."\
  - Mlamadhyamakakrik, Chapter 18, Verse 1
 "
 
@@ -308,8 +304,7 @@ It is important to emphasize that the recursion described here is not algorithmi
 Imposing boundaries on this recursion would require introducing external restrictions, which we explicitly refuse to do. We remain committed to a single axiom:
 
 
-E = \E^+, E^-\
-
+E = E^+, E^-
 
 Another crucial distinction must be made. Although we cannot assume the existence of time, the unfolding of E is nevertheless a process. There is built-in causality. Each resolution enables the next.
 
@@ -318,7 +313,7 @@ The moment of resolution can be described as a tick - a structural event that pr
 
 0.85
 
-Definition (Tick): A tick is not time. It is the minimal causal notion permitted in a pre-temporal framework: the fact that one resolution can constrain the next. Because no structure exists beyond E=\E^+,E^-\, every resolution must output only + or -, and the output must be admissible as input to further resolution. "Event" here means update/constraint inheritance, not a happening in an external time or void.
+Definition (Tick): A tick is not time. It is the minimal causal notion permitted in a pre-temporal framework: the fact that one resolution can constrain the next. Because no structure exists beyond E=E^+,E^-, every resolution must output only + or -, and the output must be admissible as input to further resolution. "Event" here means update/constraint inheritance, not a happening in an external time or void.
 
 
 To make this concrete, let us look at the primitive unfolding from the very beginning - the symbolic moment of the Fall, and our metaphorical Adam and Eve.
@@ -338,7 +333,7 @@ This yields:
 This is the exact moment of the Fall - the moment the system becomes self-aware.
 
 
--, ++ & \\
+-, ++ & \
 -+, +- &
 
 
@@ -358,14 +353,12 @@ We now obtain new dualities:
 Sameness duality
 
 
-\, \ \S^-, S^+\ \(-, ++), (-+, +-)\
-
+,  S^-, S^+ (-, ++), (-+, +-)
 
 Order duality
 
 
-\O^-, O^+\ \, \
-
+O^-, O^+ , 
 
 Crucially, the order duality applies only to the Different branch S^+ and is incompatible with the Same branch S^-.
 
@@ -442,7 +435,7 @@ So now our Tree of Knowledge includes:
 
 Step 3. Emergence of Logic
 
-Now every relation \-, -+, +-, ++\ produces a result that goes either to - or to +. At this point, logic emerges.
+Now every relation -, -+, +-, ++ produces a result that goes either to - or to +. At this point, logic emerges.
 
 A logical operation is nothing more than a consistent mapping from relations to outcomes. Each operation can be represented as a set of triples of the form:
 
@@ -463,14 +456,13 @@ Example: XOR
 XOR produces a positive outcome only when the inputs are different.
 
 
-(-, -) & - \\
-(-, +) & + \\
-(+, -) & + \\
+(-, -) & - \
+(-, +) & + \
+(+, -) & + \
 (+, +) & -
 
 
-As a set of triples: \(-,-,-), (-,+,+), (+,-,+), (+,+,-)\
-
+As a set of triples: (-,-,-), (-,+,+), (+,-,+), (+,+,-)
 This fully specifies the operation.
 
 The complete set of logical operations
@@ -481,28 +473,26 @@ All of them arise at the same level, as different outcome assignments over the s
 
 So the Tree of Knowledge at this level becomes:
 
- - Level 3: Relation Chains, Outcome, Logic, Operations: AND, OR, XOR \ (16)
+ - Level 3: Relation Chains, Outcome, Logic, Operations: AND, OR, XOR  (16)
 
 
 Step 4. Emergence of Consecutive Computation
 
-At Step 3, a logical operation takes a relation \B_1, B_2\ and produces a single outcome B_3, where B_3 \-, +\. The important point is that the outcome is of the same type as the original symbols.
+At Step 3, a logical operation takes a relation B_1, B_2 and produces a single outcome B_3, where B_3 -, +. The important point is that the outcome is of the same type as the original symbols.
 
 This means the result of a logical operation can immediately participate in a new relation.
 
-Consider a chain such as: \-+-+\
-
+Consider a chain such as: -+-+
 Applying logic to the first relation produces an outcome:
 
 
-\B_1, B_2\ B_3
+B_1, B_2 B_3
 
 
 That outcome then forms a new relation with the next symbol.
 
-In this example: \B_3, B_4\ = \-+\
-
-A logical operation can now be applied to this newly formed relation, producing: \B_3, B_4\ B_5
+In this example: B_3, B_4 = -+
+A logical operation can now be applied to this newly formed relation, producing: B_3, B_4 B_5
 
 Logic is no longer a single evaluation. It unfolds consecutively along the chain.
 
@@ -515,14 +505,13 @@ The Tree of Knowledge now includes:
 
 Step 5. Emergence of Memory (Persistence)
 
-With five symbols, the system now produces two outcomes in sequence: \B_3, B_4\ B_5
+With five symbols, the system now produces two outcomes in sequence: B_3, B_4 B_5
 
 This allows two different moments of resolution to be compared.
 
-From earlier steps, we already know the relations of sameness \-, ++\ and difference \-+, +-\.
+From earlier steps, we already know the relations of sameness -, ++ and difference -+, +-.
 
-So the outcomes themselves can be related: \B_3, B_5\
-
+So the outcomes themselves can be related: B_3, B_5
 If this relation is one of sameness, the outcome has persisted across an additional resolution. Information has survived the unfolding.
 
 Memory here is not added to the system. It appears as persistence within consecutive computation.
@@ -643,8 +632,7 @@ But awareness is not "two things exist." Awareness is two things to each other.
 
 Level 1: Duality without a viewpoint
 
-At Level 1 we have: E = \E^+, E^-\
-
+At Level 1 we have: E = E^+, E^-
 This is the first fracture in the void. Two poles appear. Yet there is still no standpoint inside the system. No "this side looking at that side." It's just the split itself.
 
 Call this proto-awareness if you want - not because it "feels," but because the structure now contains the minimal condition for awareness to ever become meaningful.
@@ -776,7 +764,7 @@ Before we talk about space, we need to talk about dimensionality - and why conti
 
 Here, dimension does not yet mean physical space. It means an ordered degree of freedom - a scale along which distinctions such as "more" and "less" can be resolved.
 
-Duality is already a dimension, because it can encode more and less without introducing anything new. Any new concept that appears within duality can be placed on a dimensional scale, where chains of \-, +\ - interpreted as \, \ - give an exact coordinate along an axis. Introducing more than two branches to represent dimensionality is unnecessary. For example, a three-way split \, , \ adds nothing essential: "center" is just a position, while "less" and "more" remain infinitely expressive.
+Duality is already a dimension, because it can encode more and less without introducing anything new. Any new concept that appears within duality can be placed on a dimensional scale, where chains of -, + - interpreted as ,  - give an exact coordinate along an axis. Introducing more than two branches to represent dimensionality is unnecessary. For example, a three-way split , ,  adds nothing essential: "center" is just a position, while "less" and "more" remain infinitely expressive.
 
 Dimensions, therefore, emerge naturally from duality itself.
 
@@ -943,16 +931,14 @@ At this point, we can already speak about sameness, difference, and ordering - b
 Space requires causal structure, which emerges at the next level: logic. At level 3, we obtain the eight triplets:
 
 
-\ - , -+, -+-, -++, +-, +-+, ++-, +++\
-
+ - , -+, -+-, -++, +-, +-+, ++-, +++
 
 Now comes a key step.
 
 Because order and relation are already present at level 2, we are justified in translating - and + into 0 and 1. Doing so gives us:
 
 
-\(0,0,0), (0,0,1), (0,1,0), (0,1,1), (1,0,0), (1,0,1), (1,1,0), (1,1,1)\
-
+(0,0,0), (0,0,1), (0,1,0), (0,1,1), (1,0,0), (1,0,1), (1,1,0), (1,1,1)
 
 This is nothing other than the eight corners of a cube in three-dimensional space.
 
@@ -1262,7 +1248,7 @@ Crucially, before spatial commitment, this amplitude vector must evolve reversib
 The only simple invariant under reversible mixing is the squared length of the amplitude vector:
 
 
-\|^(n)\|^2 = _k |a_k|^2
+|^(n)|^2 = _k |a_k|^2
 
 
 Spatial records, however, must satisfy two constraints: they must be nonnegative, and they must be additive across voxels. Signed amplitudes cannot meet these requirements directly. The minimal stable mapping that converts a reversible, rotatable compatibility vector into an additive spatial distribution is therefore quadratic:
@@ -1453,7 +1439,7 @@ At the effective level, this appears as local averaging.
 A minimal update rule is therefore diffusion-like:
 
 
-_t+1(x) = (1-)_t(x) + \,(_t)(x) + S(x)
+_t+1(x) = (1-)_t(x) + ,(_t)(x) + S(x)
 
 
 Where:
@@ -1751,8 +1737,8 @@ Let a number be nothing more than a finite trace of growth.
 
 In symbolic form, we may write:
 
-0 &:= \\
-S(x) &:= x\,+
+0 &:= \
+S(x) &:= x,+
 
 
 A number is simply a finite string of +.
@@ -1793,7 +1779,7 @@ Zero is not special because it is "nothing," but because it is the unique point 
 
 If mixed chains are allowed, cancellation becomes local:
 
-+- & \\
++- & \
 -+ &
 
 
@@ -1883,7 +1869,7 @@ AI and the Next Fall
 
 
 "
-"Behold, the man has become like one of us, knowing good and evil. Now, lest he reach out his hand and take also from the tree of life, and eat, and live forever - "\\
+"Behold, the man has become like one of us, knowing good and evil. Now, lest he reach out his hand and take also from the tree of life, and eat, and live forever - "\
  - Genesis 3:22
 "
 
@@ -2300,7 +2286,7 @@ Now, among all possible forms of distinction, duality occupies a unique position
 
 Duality is therefore not chosen, not imposed, and not arbitrary. It is the minimal and irreducible form of the distinction that oneness, by its own symmetry, cannot fail to produce.
 
-This is why E = \E^+, E^-\ is not merely a convenient axiom. It is the inevitable first expression of infinite potential.
+This is why E = E^+, E^- is not merely a convenient axiom. It is the inevitable first expression of infinite potential.
 
 
 ## A.5 From Potential to Actuality
@@ -2332,7 +2318,7 @@ Reality is the ongoing conversion of infinite potential into structured actualit
 ## A.6 Emptiness, Everythingness, and Energy
 
 
-The letter E in the axiom E = \E^+, E^-\ is not an accidental label.
+The letter E in the axiom E = E^+, E^- is not an accidental label.
 
 It can be read as emptiness - because the structure, at every level, is empty of inherent existence. Nothing in the tree is self-grounding. Everything arises through relation.
 
@@ -2388,7 +2374,7 @@ The 2nd century Buddhist philosopher demonstrated that profound spiritual truths
 
 Ngrjuna showed that emptiness - the core Buddhist insight - is not mystical void but logical necessity. Everything lacks inherent existence because everything depends on relations. And those relations are themselves empty. It's recursive structure all the way down.
 
-What Ngrjuna expressed philosophically, expresses formally and computationally: E = \E^+, E^-\ with precise derivations. Same structure, different language.
+What Ngrjuna expressed philosophically, expresses formally and computationally: E = E^+, E^- with precise derivations. Same structure, different language.
 
 This appendix demonstrates that major philosophical and spiritual traditions - when examined structurally - describe the same recursive process. Not because they borrowed from each other, but because they investigated the same reality deeply enough to encounter its actual structure.
 
@@ -2456,7 +2442,7 @@ Ngrjuna proved through logic alone: reality is not made of things but of relatio
 
  asks: What is the minimal formal structure that exhibits this property?
 
-Answer: E = \E^+, E^-\, recursively applied.
+Answer: E = E^+, E^-, recursively applied.
 
 
 ### B.1.2 Dzogchen and Zen
@@ -2472,7 +2458,7 @@ In : Rigpa is the recursive process observing itself - self-referential loop whe
 
 Zen (Japanese/Chinese Buddhism):
 
-"What is your original face before your parents were born?"\\
+"What is your original face before your parents were born?"\
 "What is the sound of one hand clapping?"
 
 A kan is a compressed, powerful, minimalistic knowledge pattern that doesn't simply resolve - it has lasting effects, opening truths through chain reaction in the recursive tree.
@@ -2557,7 +2543,7 @@ How does infinite unity create finite multiplicity? Through tzimtzum - Ein Sof "
 
 Profound paradox: infinite cannot literally contract. Tzimtzum is logical necessity: Ein Sof limits its apparent infinity to permit appearance of limitation while remaining actually infinite.
 
-This is the first recursion - E = \E^+, E^-\ - unity differentiating into complementary poles while remaining single structure.
+This is the first recursion - E = E^+, E^- - unity differentiating into complementary poles while remaining single structure.
 
 Tree of Life (Etz Chaim):
 
@@ -2600,7 +2586,7 @@ Freud's core insight: most mental activity is unconscious - operating without di
 
 :
 
-Conscious mind = patterns with strong coupling to reflective observation.\\
+Conscious mind = patterns with strong coupling to reflective observation.\
 Unconscious = constraint structures operating without coupling to awareness.
 
 Your "self" is tiny portion of total constraint structure. Most operates below coupling threshold to conscious projection.
@@ -2712,7 +2698,7 @@ Wheeler never formalized mechanism. How do yes/no questions create physical stru
 [TABLE]
 
 
-Wheeler intuited that binary information generates physical reality. shows the formal mechanism: E = \E^+, E^-\ recursively applied generates space, quantum mechanics, and classical physics.
+Wheeler intuited that binary information generates physical reality. shows the formal mechanism: E = E^+, E^- recursively applied generates space, quantum mechanics, and classical physics.
 
 Wheeler asked the right question. provides the derivation.
 
@@ -2948,7 +2934,7 @@ This is not belief or consolation; it is structural description. Pattern annihil
 ### C.4.1 Free Will as Structural Participation
 
 
-From a hypothetical omniscient perspective (which doesn't actually exist), constraint propagation is deterministic. All patterns follow from E = \E^+, E^-\ through recursive resolution.
+From a hypothetical omniscient perspective (which doesn't actually exist), constraint propagation is deterministic. All patterns follow from E = E^+, E^- through recursive resolution.
 
 From observer perspective (the only one that actually exists), choice is experienced as real.
 
@@ -3086,11 +3072,11 @@ Only duality itself is allowed.
 ### D.1 The Phenomenological Constraint: Duality
 
 
-In the Kacc\=anagotta Sutta, Gautama Buddha makes a precise structural observation:
+In the Kacc=anagotta Sutta, Gautama Buddha makes a precise structural observation:
 
 
 "
-"This world, Kacc\=ana, for the most part depends upon a duality - upon the notion of existence and the notion of non-existence."
+"This world, Kacc=ana, for the most part depends upon a duality - upon the notion of existence and the notion of non-existence."
 "
 
 
@@ -3117,8 +3103,7 @@ Any framework claiming to describe reality prior to conceptual construction must
 To formalize this constraint without importing additional assumptions, we introduce the minimal structure capable of expressing "depends on a duality":
 
 
-E = \E^+, E^-\
-
+E = E^+, E^-
 
 This definition is intentionally strict:
 
@@ -3141,8 +3126,7 @@ At the first division of duality, distinction and negation are not separate oper
 When
 
 
-E = \E^+, E^-\
-
+E = E^+, E^-
 
 appears, two things occur simultaneously:
 
@@ -3184,7 +3168,7 @@ Each pole can only reflect itself by reproducing the same dual structure inwardl
 Recursion is therefore not a rule.
 It is the only possible continuation consistent with the primitive.
 
-Using the alphabet \+, -\:
+Using the alphabet +, -:
 
 
  - Depth 1: +, -
@@ -3209,9 +3193,9 @@ Example, depth 3:
 Placing a mirror at the midpoint pairs:
 
 
-011 & 100 \\
-010 & 101 \\
-001 & 110 \\
+011 & 100 \
+010 & 101 \
+001 & 110 \
 000 & 111
 
 
@@ -3242,8 +3226,7 @@ Logic appears as soon as relations between relations become possible.
 Depth 2 produces exactly four atomic states:
 
 
-_2 = \-, -+, +-, ++\
-
+_2 = -, -+, +-, ++
 
 A Boolean connective is nothing more than:
 
@@ -3353,7 +3336,7 @@ This framework continues the structure without introducing anything else.
 ### D.9 Buddhism and Structural Duality
 
 
-The Buddha's statement in the Kacc\=anagotta Sutta is not metaphysical speculation.
+The Buddha's statement in the Kacc=anagotta Sutta is not metaphysical speculation.
 
 It is a structural diagnosis:
 
@@ -3608,73 +3591,5 @@ These are not new principles introduced for the Born derivation. They are the sa
 
 **The squaring in the Born rule.** Squaring is not an empirical fit. It is forced by the Pythagorean decomposition of orthogonal voxels plus the requirement that probabilities sum to one.
 
-**Why coupling causes decoherence.** Coupling adds constraints; constraints consume reversibility-budget; exhausted budget is stabilization. This recovers decoherence theory's empirical content with structural rather than mechanical explanation.`;
+**Why coupling causes decoherence.** Coupling adds constraints; constraints consume reversibility-budget; exhausted budget is stabilization. This recovers decoherence theory's empirical content with structural rather than mechanical explanation.
 
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, initializing copy button...');
-    console.log('promptText length:', promptText.length);
-    
-    const copyButton = document.getElementById('copyButton');
-    const copiedMessage = document.getElementById('copiedMessage');
-    const copiedOverlay = document.getElementById('copiedOverlay');
-
-    // Check if elements exist before attaching event listeners
-    if (!copyButton || !copiedMessage || !copiedOverlay) {
-        console.error('Required elements not found:', {
-            copyButton: !!copyButton,
-            copiedMessage: !!copiedMessage,
-            copiedOverlay: !!copiedOverlay
-        });
-        return;
-    }
-    
-    console.log('All elements found, attaching event listener...');
-
-    copyButton.addEventListener('click', async () => {
-        console.log('Copy button clicked!');
-        console.log('Attempting to copy', promptText.length, 'characters to clipboard...');
-        try { window.pmTrack?.event('copy_system_prompt', { location: 'index' }); } catch (_) {}
-        
-        try {
-            await navigator.clipboard.writeText(promptText);
-            console.log('Successfully copied to clipboard!');
-            
-            // Show success message with overlay
-            copiedOverlay.classList.add('show');
-            copiedMessage.classList.add('show');
-            
-            // Hide message after 2 seconds
-            setTimeout(() => {
-                copiedOverlay.classList.remove('show');
-                copiedMessage.classList.remove('show');
-            }, 2000);
-        } catch (err) {
-            console.error('Failed to copy:', err);
-            console.log('Trying fallback method...');
-            
-            // Fallback for older browsers
-            const textArea = document.createElement('textarea');
-            textArea.value = promptText;
-            document.body.appendChild(textArea);
-            textArea.select();
-            try {
-                const success = document.execCommand('copy');
-                console.log('Fallback copy result:', success);
-                
-                copiedOverlay.classList.add('show');
-                copiedMessage.classList.add('show');
-                setTimeout(() => {
-                    copiedOverlay.classList.remove('show');
-                    copiedMessage.classList.remove('show');
-                }, 2000);
-            } catch (err) {
-                console.error('Fallback also failed:', err);
-                alert('Failed to copy to clipboard');
-            }
-            document.body.removeChild(textArea);
-        }
-    });
-    
-    console.log('Copy button initialization complete!');
-});
